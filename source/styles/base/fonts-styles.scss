@@ -1,5 +1,10 @@
 .title {
   @include font-title($size: 80px, $line-height: 90px);
+text-transform: uppercase;
+
+&--section {
+    color:$color-title;
+  }
 
   @include media-desktop {
     font-size: 50px;
@@ -16,7 +21,7 @@
   }
 }
 
-.text-base {
+.txt-base {
   @include font($size: 18px, $line-height: 38.5px,  $weight: 400, $spacing: 0);
 }
 
@@ -101,6 +106,7 @@
 
 .txt-thin {
   @include font($size: 22px, $weight: 100, $spacing: 0);
+text-decoration: none;
 
   @include media-desktop {
     font-size: 20px;
@@ -115,6 +121,8 @@
 }
 
 .txt-mini {
+  text-decoration: none;
+
   @include font($size: 18px, $weight: 100, $spacing: 0);
 
   @include media-desktop {

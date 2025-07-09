@@ -1,20 +1,21 @@
 .container {
   box-sizing: border-box;
-  width: $mobile-width;
+  width: $large-width;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow-x: hidden;
+  padding-left: 240px;
+  padding-right: 240px;
 
-  @include media-tablet {
-    padding-left: 45px;
-    padding-right: 45px;
-    width: $tablet-width;
-  }
+//     @include media-desktop {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     width: $desktop-width;
+//   }
 
-  @include media-desktop {
-    padding-left: 100px;
-    padding-right: 100px;
-    width: $desktop-width;
-  }
+//   @include media-tablet {
+//     width: $tablet-width;
+//   }
+
+//  @include media-mobile {
+//     width: $mobile-width;
+//   }
 }

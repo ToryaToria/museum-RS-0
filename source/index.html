@@ -1,17 +1,355 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preload" href="#" type="font/woff2" as="font" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img class="logo__img" src="" alt="logo" />
+        <span class="text-logo">Louvre</span>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Visiting</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Explore</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Video</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Gallery</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Tickets</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <section class="welcome">
+      <div class="container">
+        <h1 class="visually-hidden">Museum Louvre</h1>
+
+        <div class="welcome__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <h2 class="slider__title title">Welcome to the Louvre</h2>
+              <p class="slider__sybtitle subtitle">From the castle to the museum</p>
+              <button class="slider__button text-btn">Discover the Louvre</button>
+            </li>
+          </ul class>
+
+          <div class="slider__pagination">
+            <div>№ стр</div>
+            <div>булллиты</div>
+            <div>стрелки</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="visiting">
+      <div class="container">
+        <h2 class="title title--section">Virtual tour</h2>
+
+        <ul class="visiting__list">
+          <li class="visiting__card">
+            <img src="" alt="Royal Palace">
+            <h3 class="title-card">Royal Palace</h3>
+            <a class="txt-thin" href="#">360° Virtual Tour</a>
+            <a class="txt-mini" href="#">Google Street Panorama View</a>
+          </li>
+
+          <li class="visiting__card">
+            <img src="" alt="Denon Wing">
+            <h3 class="title-card">Denon Wing</h3>
+            <a class="txt-thin" href="#">360° Virtual Tour</a>
+            <a class="txt-mini" href="#">Google Street Panorama View</a>
+          </li>
+
+          <li class="visiting__card">
+            <img src="" alt="Colonnade Perrault">
+            <h3 class="title-card">Colonnade Perrault</h3>
+            <a class="txt-thin" href="#">360° Virtual Tour</a>
+            <a class="txt-mini" href="#">Google Street Panorama View</a>
+          </li>
+
+          <li class="visiting__card">
+            <img src="" alt="Greek hall">
+            <h3 class="title-card">Greek hall</h3>
+            <a class="txt-thin" href="#">360° Virtual Tour</a>
+            <a class="txt-mini" href="#">Google Street Panorama View</a>
+          </li>
+
+          <li class="visiting__card">
+            <img src="" alt="Mona Lisa">
+            <h3 class="title-card">Mona Lisa</h3>
+            <a class="txt-thin" href="#">360° Virtual Tour</a>
+            <a class="txt-mini" href="#">Google Street Panorama View</a>
+          </li>
+
+          <li class="visiting__card">
+            <img src="" alt="Night Palace">
+            <h3 class="title-card">Night Palace</h3>
+            <a class="txt-thin" href="#">360° Virtual Tour</a>
+            <a class="txt-mini" href="#">Google Street Panorama View</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="explore">
+      <div class="container">
+        <div class="explore__wrapper">
+          <h2 class="explore__title title">Picture explore</h2>
+          <p class="explore__text txt-light">
+            Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
+          </p>
+          <p class="explore__text txt-light">
+            It was cleaned in 1984 to remove a <a class="explore__link" href="#">"yellow veil"</a> of dust that had
+            gathered since the previous restoration in the 19th century.
+          </p>
+          <p class="explore__text txt-light">
+            The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it
+            looked different.
+          </p>
+        </div>
+
+        <div>
+          <img src="" alt="сравнение">
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="container">
+        <div class="video__title-wrapper">
+          <h2 class="title title--section">Video journey</h2>
+          <p class="video__text txt-light">
+            Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or
+            Hammurabi's Code
+          </p>
+        </div>
+
+        <div>VIDEO</div>
+
+        <div class="video__slider">
+          <ul>
+            <li>
+              <div>
+                <img src="" alt="">
+                <p class="txt-base">Exposition - Le Corps et l’Ame. De Dona...</p>
+                <button>...</button>
+              </div>
+              <div>video</div>
+            </li>
+
+            <li>
+              <div>
+                <img src="" alt="">
+                <p class="txt-base">Au Louvre ! La Venus de Milo</p>
+                <button>...</button>
+              </div>
+              <div>video</div>
+            </li>
+
+            <li>
+              <div>
+                <img src="" alt="">
+                <p class="txt-base">Promenade dans les collections mesop...</p>
+                <button>...</button>
+              </div>
+              <div>video</div>
+            </li>
+          </ul>
+
+          <div>
+            <button>tyda</button>
+            <div>pagination</div>
+            <button>syda</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <h2 class="title">Art Gallery</h2>
+        <div>
+          <ul>
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+
+            <li>
+              <img src="" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="tickets">
+      <div class="container">
+        <h2 class="tickets__title title title--section">BUY TICKETS</h2>
+        <img class="tickets__img" src="" alt="">
+
+        <form class="tickets__form form" action="">
+          найди!!!
+        </form>
+
+        <div class="tickets__parallax">
+          <img src="" alt="">
+          параллакс
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__title title title--section">Contacts</h2>
+        <div>
+          <div>
+            <h3 class="txt-address">Palais Royal Musee du Louvre</h3>
+            <p class="txt-light"></p>
+            <p class="txt-light"></p>
+            <p class="txt-light"></p>
+          </div>
+
+          <div>карта</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container nav">
+      <div class="footer__wrapper">
+        <div class="logo">
+          <img class="logo__img" src="" alt="logo" />
+          <span class="text-logo">Louvre</span>
+        </div>
+
+        <ul class="footer__nav nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Visiting</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Explore</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Video</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Gallery</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Tickets</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <li>
+            <a class="footer__social-link" href="#"></a>
+          </li>
+
+          <li>
+            <a class="footer__social-link" href="#"></a>
+          </li>
+
+          <li>
+            <a class="footer__social-link" href="#"></a>
+          </li>
+
+          <li>
+            <a class="footer__social-link" href="#"></a>
+          </li>
+
+          <li>
+            <a class="footer__social-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="txt-copyright">© 2021</p>
+        <p class="txt-copyright">The Rolling Scopes School</p>
+        <p class="txt-copyright">Torya</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
