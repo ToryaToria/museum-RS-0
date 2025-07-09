@@ -1,0 +1,23 @@
+.page {
+  /*  для стики-футера */
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  position: relative;
+  margin: 0 auto;
+  min-width: $mobile-width;
+
+  /*  для стики-футера */
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+
+.page__main {
+  /*  для стики-футера */
+  flex-grow: 1;
+}
+

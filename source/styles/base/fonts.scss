@@ -1,0 +1,66 @@
+/* ===================== шрифты. подключение =============== */
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../fonts/Forum/Forum-Regular.woff2") format("woff2"),
+    url("../../fonts/Forum/Forum-Regular.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src:
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Thin.woff2") format("woff2"),
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Thin.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Light.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Regular.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Medium.woff2") format("woff2"),
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Medium.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../../fonts/Roboto_Condensed/RobotoCondensed-Bold.woff") format("woff");
+
+  font-display: swap;
+}
