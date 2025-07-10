@@ -1,6 +1,6 @@
 @mixin font(
   $size,
-  $line-height: auto,
+  $line-height: 100%,
   $weight: 300,
   $color: $color-black,
   $spacing: 0.02em
@@ -17,7 +17,7 @@
 
 @mixin font-title(
   $size,
-  $line-height: auto,
+  $line-height: 100%,
   $color: $color-white,
   $spacing: 0.05em
 ) {
@@ -77,16 +77,4 @@
   height: 100%;
   top: 0;
   left: 0;
-}
-
-@mixin angle($width: 16px, $height: 16px, $bg-color: $color-bg-light) {
-  display: block;
-  width: $width;
-  height: $height;
-  background-color: $bg-color;
-  mask-position: center;
-  mask-size: auto;
-  mask-repeat: no-repeat;
-  mask-image: url("../../__spritemap#sprite-angle-view");
-  z-index: 5;
 }

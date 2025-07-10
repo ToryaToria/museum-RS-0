@@ -1,0 +1,35 @@
+.contacts {
+   padding-top: 75px;
+  padding-bottom: 74px;
+}
+
+.contacts__title {
+margin-bottom: 75px;
+}
+
+.contacts__wrapper {
+display: flex;
+gap: 198px;
+}
+
+.contacts__img {
+  display: block;
+  width: 960px;
+  height: 620px;
+  object-fit: contain;
+  background-color: antiquewhite;
+}
+
+.contacts__address  {
+margin-bottom: 50px;
+}
+
+.contacts__text {
+margin-bottom: 25px;
+}
+
+.contacts__link {
+  &:hover {
+    text-decoration: underline;
+  }
+}

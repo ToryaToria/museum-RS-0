@@ -1,0 +1,30 @@
+.welcome {
+  background-color: $color-bg-dark;
+}
+
+.welcome__list {
+  @include list-reset;
+
+}
+
+.welcome__item {
+  box-sizing: border-box;
+  min-height: 810px;
+          padding: 150px 842px 0 0;
+
+    background-color: antiquewhite;
+
+}
+
+.welcome__item-wrapper {
+min-width: 598px;
+  background-color: aquamarine;
+}
+
+.welcome__slider-title {
+  margin-bottom: 25px;
+}
+
+.welcome__slider-sybtitle {
+margin-bottom: 75px;
+}

@@ -1,0 +1,20 @@
+.nav__list {
+@include list-reset;
+
+display: flex;
+max-width: 720px;
+flex-wrap: wrap;
+gap: 55px;
+cursor: pointer;
+}
+
+
+.nav__link {
+  &:hover {
+    color: $color-accent;
+  }
+
+    &:active {
+      color: $color-active;
+    }
+}
