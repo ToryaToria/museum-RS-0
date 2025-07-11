@@ -2,23 +2,88 @@
   background-color: $color-bg-dark;
 }
 
+.welcome__slider {
+  position: relative;
+  padding-bottom: 60px;
+}
+
 .welcome__list {
   @include list-reset;
-
 }
 
 .welcome__item {
   box-sizing: border-box;
   min-height: 810px;
-          padding: 150px 842px 0 0;
+  padding: 150px 842px 0 0;
 
-    background-color: antiquewhite;
+  // background-color: antiquewhite;
 
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  background-image: linear-gradient(
+      to right,
+      black,
+      15%,
+      black,
+      45%,
+      transparent
+    ),
+    url("../../images/welcome-slider/welcome_1-1x.jpg");
+
+  &--2 {
+    background-image: linear-gradient(
+        to right,
+        black,
+        15%,
+        black,
+        45%,
+        transparent
+      ),
+      url("../../images/welcome-slider/welcome_2-1x.jpg");
+  }
+
+  &--3 {
+    background-image: linear-gradient(
+        to right,
+        black,
+        15%,
+        black,
+        45%,
+        transparent
+      ),
+      url("../../images/welcome-slider/welcome_3-1x.jpg");
+  }
+
+  &--4 {
+    background-image: linear-gradient(
+        to right,
+        black,
+        15%,
+        black,
+        45%,
+        transparent
+      ),
+      url("../../images/welcome-slider/welcome_4-1x.jpg");
+  }
+
+  &--5 {
+    background-image: linear-gradient(
+        to right,
+        black,
+        15%,
+        black,
+        45%,
+        transparent
+      ),
+      url("../../images/welcome-slider/welcome_5-1x.jpg");
+  }
 }
 
 .welcome__item-wrapper {
-min-width: 598px;
-  background-color: aquamarine;
+  min-width: 598px;
+  // background-color: aquamarine;
 }
 
 .welcome__slider-title {
@@ -26,5 +91,66 @@ min-width: 598px;
 }
 
 .welcome__slider-sybtitle {
-margin-bottom: 75px;
+  margin-bottom: 75px;
+}
+
+.welcome__slider-controller {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  padding: 40px 74px;
+  background-color: $color-bg-dark;
+
+  display: flex;
+  gap: 55px;
+  align-items: center;
+}
+
+.welcome__slider-str {
+  @include font(
+    $size: 22px,
+    $line-height: 40px,
+    $weight: 400,
+    $spacing: 0,
+    $color: $color-white
+  );
+}
+
+.welcome__slider-pagination {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.welcome__slider-bullit {
+  @include btn-reset;
+  width: 16px;
+  height: 16px;
+  background-color: $color-white;
+
+  &--current {
+    background-color: $color-point;
+  }
+}
+
+.welcome__slider-navigation {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.welcome__slider-arr {
+  @include btn-reset;
+  width: 30px;
+  height: 8px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../../icons/arr_left.svg");
+
+  &--right {
+    transform: rotate(180deg);
+  }
 }

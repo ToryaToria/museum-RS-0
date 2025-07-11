@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Название проекта</title>
+  <title>MUSEUM</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="preload" href="#" type="font/woff2" as="font" />
   <link rel="stylesheet" href="styles/styles.css" />
@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__container container">
       <div class="logo">
-        <img class="logo__img" src="" alt="logo" />
+        <img class="logo__img" src="./images/logo.svg" alt="logo" width="49" height="26" />
         <span class="text-logo">Louvre</span>
       </div>
 
@@ -62,12 +62,60 @@
                 <button class="button welcome__button text-btn">Discover the Louvre</button>
               </div>
             </li>
+
+            <li class="welcome__item welcome__item--2 visually-hidden">
+              <div class="welcome__item-wrapper">
+                <h2 class="welcome__slider-title title">Welcome to the Louvre</h2>
+                <p class="welcome__slider-sybtitle subtitle">From the castle to the museum</p>
+                <button class="button welcome__button text-btn">Discover the Louvre</button>
+              </div>
+            </li>
+
+            <li class="welcome__item welcome__item--3 visually-hidden">
+              <div class="welcome__item-wrapper">
+                <h2 class="welcome__slider-title title">Welcome to the Louvre</h2>
+                <p class="welcome__slider-sybtitle subtitle">From the castle to the museum</p>
+                <button class="button welcome__button text-btn">Discover the Louvre</button>
+              </div>
+            </li>
+
+            <li class="welcome__item welcome__item--4 visually-hidden">
+              <div class="welcome__item-wrapper">
+                <h2 class="welcome__slider-title title">Welcome to the Louvre</h2>
+                <p class="welcome__slider-sybtitle subtitle">From the castle to the museum</p>
+                <button class="button welcome__button text-btn">Discover the Louvre</button>
+              </div>
+            </li>
+
+            <li class="welcome__item welcome__item--5 visually-hidden">
+              <div class="welcome__item-wrapper">
+                <h2 class="welcome__slider-title title">Welcome to the Louvre</h2>
+                <p class="welcome__slider-sybtitle subtitle">From the castle to the museum</p>
+                <button class="button welcome__button text-btn">Discover the Louvre</button>
+              </div>
+            </li>
           </ul class>
 
-          <div class="slider__pagination">
-            <div>№ стр</div>
-            <div>булллиты</div>
-            <div>стрелки</div>
+          <div class="welcome__slider-controller">
+            <div class="welcome__slider-str"><span>01</span> | <span>05</span></div>
+            <div class="welcome__slider-pagination">
+              <span class="visually-hidden">булллиты</span>
+              <button class="welcome__slider-bullit welcome__slider-bullit--current" type="button"></button>
+              <button class="welcome__slider-bullit" type="button"></button>
+              <button class="welcome__slider-bullit" type="button"></button>
+              <button class="welcome__slider-bullit" type="button"></button>
+              <button class="welcome__slider-bullit" type="button"></button>
+            </div>
+
+            <div class="welcome__slider-navigation">
+              <span class="visually-hidden">стрелки</span>
+              <button class="welcome__slider-arr" type="button">
+                <span class="visually-hidden">назад</span>
+              </button>
+              <button class="welcome__slider-arr welcome__slider-arr--right" type="button">
+                <span class="visually-hidden">вперед</span>
+              </button>
+            </div>
           </div>
 
         </div>
@@ -81,7 +129,7 @@
         <ul class="visiting__list">
           <li class="visiting__card">
             <a class="visiting__link" href="#">
-              <img class="visiting__img" width="440" height="285" src="" alt="Royal Palace">
+              <img class="visiting__img" width="440" height="285" src="./images/tours/tour_1-1x.jpg" alt="Royal Palace">
               <h3 class="visiting__title-card title-card title-card--underline">Royal Palace</h3>
               <p class="visiting__text text-thin">360° Virtual Tour</p>
               <p class="visiting__text text-mini">Google Street Panorama View</p>
@@ -90,7 +138,7 @@
 
           <li class="visiting__card">
             <a class="visiting__link" href="#">
-              <img class="visiting__img" width="440" height="285" src="" alt="Denon Wing">
+              <img class="visiting__img" width="440" height="285" src="./images/tours/tour_2-1x.jpg" alt="Denon Wing">
               <h3 class="visiting__title-card title-card title-card--underline">Denon Wing</h3>
               <p class="visiting__text text-thin">360° Virtual Tour</p>
               <p class="visiting__text text-mini">Google Street Panorama View</p>
@@ -99,7 +147,8 @@
 
           <li class="visiting__card">
             <a class="visiting__link" href="#">
-              <img class="visiting__img" width="440" height="285" src="" alt="Colonnade Perrault">
+              <img class="visiting__img" width="440" height="285" src="./images/tours/tour_3-1x.jpg"
+                alt="Colonnade Perrault">
               <h3 class="visiting__title-card title-card title-card--underline">Colonnade Perrault</h3>
               <p class="visiting__text text-thin">360° Virtual Tour</p>
               <p class="visiting__text text-mini">Google Street Panorama View</p>
@@ -108,7 +157,7 @@
 
           <li class="visiting__card">
             <a class="visiting__link" href="#">
-              <img class="visiting__img" width="440" height="285" src="" alt="Greek hall">
+              <img class="visiting__img" width="440" height="285" src="./images/tours/tour_4-1x.jpg" alt="Greek hall">
               <h3 class="visiting__title-card title-card title-card--underline">Greek hall</h3>
               <p class="visiting__text text-thin">360° Virtual Tour</p>
               <p class="visiting__text text-mini">Google Street Panorama View</p>
@@ -117,7 +166,7 @@
 
           <li class="visiting__card">
             <a class="visiting__link" href="#">
-              <img class="visiting__img" width="440" height="285" src="" alt="Mona Lisa">
+              <img class="visiting__img" width="440" height="285" src="./images/tours/tour_5-1x.jpg" alt="Mona Lisa">
               <h3 class="visiting__title-card title-card title-card--underline">Mona Lisa</h3>
               <p class="visiting__text text-thin">360° Virtual Tour</p>
               <p class="visiting__text text-mini">Google Street Panorama View</p>
@@ -126,7 +175,7 @@
 
           <li class="visiting__card">
             <a class="visiting__link" href="#">
-              <img class="visiting__img" width="440" height="285" src="" alt="Night Palace">
+              <img class="visiting__img" width="440" height="285" src="./images/tours/tour_6-1x.jpg" alt="Night Palace">
               <h3 class="visiting__title-card title-card title-card--underline">Night Palace</h3>
               <p class="visiting__text text-thin">360° Virtual Tour</p>
               <p class="visiting__text text-mini">Google Street Panorama View</p>
@@ -154,7 +203,8 @@
         </div>
 
         <div>
-          <img class="explore__img" src="" alt="сравнение" width="720" height="700">
+          <img class="explore__img" src="./images/explore-slider/explore-1x.jpg" alt="сравнение" width="720"
+            height="700">
         </div>
       </div>
     </section>
@@ -170,14 +220,25 @@
         </div>
 
         <div>
-          <video class="video__video" src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>
+          <!-- src="./video/video0.mp4" -->
+          <video class="video__video" poster="./images/video_posters/poster0-1x.jpg" controls width="1440"
+            height="650"></video>
 
           <div class="video__control-panel">
-            <button> play</button>
+            <button class="video__play" type="button">
+              <span class="visually-hidden">play</span>
+            </button>
+
             <input class="video__progress" type="range" value="40" min="0" max="100" step="1">
-            <button>value</button>
-            <input class="video__value" type="range" value="40" min="0" max="100" step="1">
-            <button>размер</button>
+
+            <button class="video__volume" type="button">
+              <span class="visually-hidden">volume</span>
+            </button>
+
+            <input class="video__progress-volume" type="range" value="40" min="0" max="100" step="1">
+            <button class="video__fullscreen" type="button">
+              <span class="visually-hidden">fullscreen</span>
+            </button>
           </div>
         </div>
 
@@ -189,8 +250,8 @@
                 <p class="video__information-text text-base">Exposition - Le Corps et l’Ame. De Dona...</p>
                 <button class="video__information-btn">...</button>
               </div>
-              <video class="video__slider-video" src="assets/video/video.mp4" poster="assets/video/poster.jpg"
-                controls></video>
+              <!-- src="./video/video1.mp4" -->
+              <video class="video__slider-video" poster="./images/video_posters/poster0-1x.jpg" controls></video>
             </li>
 
             <li class="video__item">
@@ -199,8 +260,8 @@
                 <p class="text-base">Au Louvre ! La Venus de Milo</p>
                 <button class="video__information-btn">...</button>
               </div>
-              <video class="video__slider-video" src="assets/video/video.mp4" poster="assets/video/poster.jpg"
-                controls></video>
+              <!-- src="./video/video2.mp4" -->
+              <video class="video__slider-video" poster="./images/video_posters/poster2-1x.jpg" controls></video>
             </li>
 
             <li class="video__item">
@@ -209,15 +270,47 @@
                 <p class="text-base">Promenade dans les collections mesop...</p>
                 <button class="video__information-btn">...</button>
               </div>
-              <video class="video__slider-video" src="assets/video/video.mp4" poster="assets/video/poster.jpg"
-                controls></video>
+              <!-- src="./video/video3.mp4" -->
+              <video class="video__slider-video" poster="./images/video_posters/poster3-1x.jpg" controls></video>
+            </li>
+
+            <li class="video__item">
+              <div class="video__information">
+                <img class="video__information-img" src="" alt="" width="40" height="40">
+                <p class="text-base">Promenade dans les collections mesop...</p>
+                <button class="video__information-btn">...</button>
+              </div>
+              <!-- src="./video/video4.mp4" -->
+              <video class="video__slider-video" poster="./images/video_posters/poster4-1x.jpg" controls></video>
+            </li>
+
+            <li class="video__item">
+              <div class="video__information">
+                <img class="video__information-img" src="" alt="" width="40" height="40">
+                <p class="text-base">Promenade dans les collections mesop...</p>
+                <button class="video__information-btn">...</button>
+              </div>
+              <!-- src="./video/video5.mp4" -->
+              <video class="video__slider-video" poster="./images/video_posters/poster5-1x.jpg" controls></video>
             </li>
           </ul>
 
-          <div class="video__pagination">
-            <button>tyda</button>
-            <div>pagination</div>
-            <button>syda</button>
+          <div class="video__controller">
+            <button class="video__arr  video__arr--left" type="button">
+              <span class="visually-hidden">назад</span>
+            </button>
+
+            <div class="video__pagination">
+              <span class="visually-hidden">пагинация</span>
+              <button class="video__bullit video__bullit--current" type="button"></button>
+              <button class="video__bullit" type="button"></button>
+              <button class="video__bullit" type="button"></button>
+              <button class="video__bullit" type="button"></button>
+              <button class="video__bullit" type="button"></button>
+            </div>
+
+            <button class="video__arr" type="button"> <span class="visually-hidden">вперед</span>
+            </button>
           </div>
         </div>
       </div>
@@ -229,51 +322,63 @@
         <div class="gallery__slider">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="570">
+              <img class="gallery__img" src="./images/galery/galery1-1x.jpg" alt="" width="456" height="570">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="570">
+              <img class="gallery__img" src="./images/galery/galery2-1x.jpg" alt="" width="456" height="570">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="456">
+              <img class="gallery__img" src="./images/galery/galery3-1x.jpg" alt="" width="456" height="456">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" width="456" height="242">
+              <img class="gallery__img" src="./images/galery/galery4-1x.jpg" width="456" height="242">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="456">
+              <img class="gallery__img" src="./images/galery/galery5-1x.jpg" alt="" width="456" height="456">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="570">
+              <img class="gallery__img" src="./images/galery/galery6-1x.jpg" alt="" width="456" height="570">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="570">
+              <img class="gallery__img" src="./images/galery/galery7-1x.jpg" alt="" width="456" height="570">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="292">
+              <img class="gallery__img" src="./images/galery/galery8-1x.jpg" alt="" width="456" height="292">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="570">
+              <img class="gallery__img" src="./images/galery/galery9-1x.jpg" alt="" width="456" height="570">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="456">
+              <img class="gallery__img" src="./images/galery/galery10-1x.jpg" alt="" width="456" height="456">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="456">
+              <img class="gallery__img" src="./images/galery/galery11-1x.jpg" alt="" width="456" height="456">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="" alt="" width="456" height="342">
+              <img class="gallery__img" src="./images/galery/galery12-1x.jpg" alt="" width="456" height="342">
+            </li>
+
+             <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery13-1x.jpg" alt="" width="456" height="342">
+            </li>
+
+             <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery14-1x.jpg" alt="" width="456" height="342">
+            </li>
+
+             <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery15-1x.jpg" alt="" width="456" height="342">
             </li>
           </ul>
         </div>
@@ -284,7 +389,7 @@
       <div class="container">
         <h2 class="tickets__title title title--section title--underline">BUY TICKETS</h2>
         <div class="tickets__wrapper">
-          <img class="tickets__img" src="" alt="" width="720" height="550">
+          <img class="tickets__img" src="./images/tickets/tickets-1x.jpg" alt="" width="720" height="550">
 
           <form class="tickets__form form" action="">
             найди!!!
@@ -294,7 +399,7 @@
     </section>
 
     <div class="page__decor">
-      <img class="page__img" src="" alt="" width="1920" height="400">
+      <img class="page__img" src="./images/parallax-1x.jpg" alt="" width="1920" height="400">
     </div>
 
     <section class="contacts">
@@ -312,7 +417,7 @@
           </div>
 
           <div>
-            <img class="contacts__img" src="" alt="карта сокровищ" width="960" height="620">
+            <img class="contacts__img" src="./images/maps/map-1x.jpg" alt="карта сокровищ" width="960" height="620">
           </div>
         </div>
       </div>
@@ -323,52 +428,52 @@
     <div class="container">
       <div class="footer__wrapper">
         <div class="logo">
-          <img class="logo__img" src="" alt="logo"/>
+          <img class="logo__img" src="./images/logo.svg" alt="logo" />
           <span class="text-logo">Louvre</span>
         </div>
 
-         <nav class="nav">
+        <nav class="nav">
           <ul class="footer__nav">
-          <li class="nav__item">
-            <a class="nav__link text-nav" href="#">Visiting</a>
-          </li>
+            <li class="nav__item">
+              <a class="nav__link text-nav" href="#">Visiting</a>
+            </li>
 
-          <li class="nav__item">
-            <a class="nav__link text-nav" href="#">Explore</a>
-          </li>
+            <li class="nav__item">
+              <a class="nav__link text-nav" href="#">Explore</a>
+            </li>
 
-          <li class="nav__item">
-            <a class="nav__link text-nav" href="#">Video</a>
-          </li>
+            <li class="nav__item">
+              <a class="nav__link text-nav" href="#">Video</a>
+            </li>
 
-          <li class="nav__item">
-            <a class="nav__link text-nav" href="#">Gallery</a>
-          </li>
+            <li class="nav__item">
+              <a class="nav__link text-nav" href="#">Gallery</a>
+            </li>
 
-          <li class="nav__item">
-            <a class="nav__link text-nav" href="#">Tickets</a>
-          </li>
+            <li class="nav__item">
+              <a class="nav__link text-nav" href="#">Tickets</a>
+            </li>
 
-          <li class="nav__item">
-            <a class="nav__link text-nav" href="#">Contacts</a>
-          </li>
-        </ul>
-         </nav>
+            <li class="nav__item">
+              <a class="nav__link text-nav" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
         <ul class="footer__social">
           <li class="footer__social-item">
             <a class="footer__social-link" href="#"></a>
           </li>
 
-           <li class="footer__social-item">
+          <li class="footer__social-item">
             <a class="footer__social-link" href="#"></a>
           </li>
 
-           <li class="footer__social-item">
+          <li class="footer__social-item">
             <a class="footer__social-link" href="#"></a>
           </li>
 
-           <li class="footer__social-item">
+          <li class="footer__social-item">
             <a class="footer__social-link" href="#"></a>
           </li>
         </ul>
