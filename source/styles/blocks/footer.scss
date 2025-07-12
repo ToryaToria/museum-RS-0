@@ -2,32 +2,31 @@
   padding-top: 75px;
   padding-bottom: 50px;
   background-color: $color-bg-dark;
-
+  padding-bottom: 500px;
 }
 
 .footer__wrapper {
-display: flex;
-align-items: flex-start;
-border-bottom: 3px solid $color-icon-line;
-padding-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 3px solid $color-icon-line;
+  padding-bottom: 50px;
 }
 
 .footer__nav {
   @include list-reset;
   display: flex;
-margin-left: 145px;
-flex-direction: column;
-gap: 25px 150px;
-flex-wrap: wrap;
+  margin-left: 145px;
+  flex-direction: column;
+  gap: 25px 150px;
+  flex-wrap: wrap;
 
-justify-content: flex-start;
-height: 128px;
-width: 694px;
+  justify-content: flex-start;
+  height: 128px;
+  width: 694px;
 }
 
-
 .footer__social {
-   @include list-reset;
+  @include list-reset;
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
@@ -35,20 +34,68 @@ width: 694px;
 }
 
 .footer__social-item {
-display: block;
-box-sizing: border-box;
-width: 48px;
-height: 48px;
-border: 1px solid $color-white;
-border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  background-color: $color-white;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  &:hover {
+    background-color: $color-text-accent;
+  }
+
+  &:focus {
+    background-color: $color-point;
+  }
+
+  &:active {
+    background-color: $color-accent;
+  }
+
+  &--youtube {
+    mask-size: 23px 16px;
+    mask-image: url("../../icons/youtube.svg");
+  }
+
+  &--inst {
+    mask-size: 20px 20px;
+    mask-image: url("../../icons/inst.svg");
+  }
+
+  &--face {
+    mask-size: 13px 20px;
+    mask-image: url("../../icons/face.svg");
+  }
+
+  &--twitt {
+    mask-size: 20px 16px;
+    mask-image: url("../../icons/twitter.svg");
+  }
+
+  &--pint {
+    mask-size: 20px 20px;
+    mask-image: url("../../icons/pint.svg");
+  }
 }
 
 .footer__copyright {
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
-}
-
-.footer__social-link {
-  
 }

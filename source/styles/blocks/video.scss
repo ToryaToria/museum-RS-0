@@ -89,19 +89,29 @@
 }
 
 .video__item {
+  position: relative;
   box-sizing: border-box;
   width: 452px;
   min-height: 254px;
-  background-color: aquamarine;
   flex-shrink: 0;
   flex-grow: 0;
 }
 
 .video__information {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
+  align-items: center;
   gap: 10px;
   // justify-content: space-between;
+  padding: 15px 36px 0 10px;
+
+    // background-color: aquamarine;
+
 }
 
 .video__information-img {
@@ -110,11 +120,23 @@
   height: 40px;
   border-radius: 50%;
   background-color: antiquewhite;
+  object-fit: cover;
+}
+
+.video__information-text {
+  color: $color-white;
 }
 
 .video__information-btn {
+  @include btn-reset;
   display: block;
-  // margin-right: auto;
+  width: 4px;
+  height: 16px;
+
+   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../../icons/still.svg");
 }
 
 .video__information-text {
