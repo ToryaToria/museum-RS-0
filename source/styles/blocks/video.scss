@@ -31,14 +31,14 @@
 
 .video__play {
   @include btn-reset;
+  @include icon;
+
   display: block;
   width: 23px;
   height: 31px;
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url("../../icons/play.svg");
+  background-color: $color-icon-video;
+  mask-image: url("../../icons/play.svg");
 }
 
 .video__progress {
@@ -49,14 +49,14 @@
 
 .video__volume {
   @include btn-reset;
+  @include icon;
+
   display: block;
   width: 38px;
   height: 31px;
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url("../../icons/volume.svg");
+  background-color: $color-icon-video;
+  mask-image: url("../../icons/volume.svg");
 }
 
 .video__progress-volume {
@@ -67,14 +67,24 @@
 
 .video__fullscreen {
   @include btn-reset;
+  @include icon;
+
   display: block;
   width: 35px;
   height: 35px;
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url("../../icons/fullscreen.svg");
+  background-color: $color-icon-video;
+  mask-image: url("../../icons/fullscreen.svg");
+}
+
+.video__play,
+.video__volume,
+.video__fullscreen {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-icon-video-hover;
+  }
 }
 
 .video__slider {
@@ -107,11 +117,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  // justify-content: space-between;
   padding: 15px 36px 0 10px;
-
-    // background-color: aquamarine;
-
 }
 
 .video__information-img {
@@ -133,7 +139,7 @@
   width: 4px;
   height: 16px;
 
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-image: url("../../icons/still.svg");
@@ -156,18 +162,24 @@
 }
 
 .video__arr {
-   @include btn-reset;
+  @include btn-reset;
+    @include icon;
+
   display: block;
   width: 10px;
   height: 12px;
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url("../../icons/arr-video-right.svg");
+   background-color: $color-gray;
+  mask-image: url("../../icons/arr-video-right.svg");
 
   &--left {
     transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-btn;
   }
 }
 
@@ -177,7 +189,7 @@
 }
 
 .video__bullit {
-     @include btn-reset;
+  @include btn-reset;
   display: block;
   width: 12px;
   height: 12px;
@@ -186,6 +198,15 @@
   background-color: $color-gray;
 
   &--current {
-      background-color: $color-dark;
+    background-color: $color-dark;
+  }
+}
+
+.video__bullit,
+.video__arr {
+&:hover,
+  &:focus,
+  &:active {
+    background-color: $color-btn;
   }
 }

@@ -63,10 +63,9 @@
 }
 
 @mixin icon {
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
 }
 
 @mixin overlay($bg-color: $color-overlay) {

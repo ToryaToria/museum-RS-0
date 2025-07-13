@@ -16,8 +16,6 @@
   min-height: 810px;
   padding: 150px 842px 0 0;
 
-  // background-color: antiquewhite;
-
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -83,7 +81,6 @@
 
 .welcome__item-wrapper {
   min-width: 598px;
-  // background-color: aquamarine;
 }
 
 .welcome__slider-title {
@@ -132,6 +129,12 @@
   &--current {
     background-color: $color-point;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-accent;
+  }
 }
 
 .welcome__slider-navigation {
@@ -145,12 +148,20 @@
   width: 30px;
   height: 8px;
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url("../../icons/arr_left.svg");
+      background-color: $color-white;
+
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  mask-image: url("../../icons/arr_left.svg");
 
   &--right {
     transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-accent;
   }
 }
