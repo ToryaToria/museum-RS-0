@@ -252,9 +252,13 @@
         </div>
 
         <div>
-          <!-- src="./video/video0.mp4" -->
-          <video class="video__video" poster="./images/video_posters/poster0-1x.jpg" controls width="1440"
-            height="650"></video>
+
+          <div class="video__wrapper">
+            <iframe width="1440" height="650" src="https://www.youtube.com/embed/zp1BXPX8jcU" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
 
           <div class="video__control-panel">
             <button class="video__play" type="button">
@@ -278,68 +282,80 @@
         <div class="video__slider">
           <ul class="video__list">
             <li class="video__item">
-              <div class="video__information">
+              <!-- <div class="video__information">
                 <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
                   height="40">
                 <p class="video__information-text text-base">Exposition - Le Corps et l’Ame. De Dona...</p>
                 <button class="video__information-btn">
                   <span class="visually-hidden">still</span>
                 </button>
-              </div>
+              </div> -->
               <!-- src="./video/video1.mp4" -->
-              <video class="video__slider-video" poster="./images/video_posters/poster3-1x.jpg" controls></video>
+
+              <div class="video__slider-video video__slider-video--slide1">
+                <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" frameborder="0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
             </li>
 
             <li class="video__item">
-              <div class="video__information">
+              <!-- <div class="video__information">
                 <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
                   height="40">
                 <p class="video__information-text text-base">Au Louvre ! La Venus de Milo</p>
                 <button class="video__information-btn">
                   <span class="visually-hidden">still</span>
                 </button>
+              </div> -->
+
+              <div class="video__slider-video video__slider-video--slide2">
+                <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" frameborder="0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
               </div>
-              <!-- src="./video/video2.mp4" -->
-              <video class="video__slider-video" poster="./images/video_posters/poster1-1x.jpg" controls></video>
             </li>
 
             <li class="video__item">
-              <div class="video__information">
+              <!-- <div class="video__information">
                 <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
                   height="40">
                 <p class="video__information-text text-base">Promenade dans les collections mesop...</p>
                 <button class="video__information-btn">
                   <span class="visually-hidden">still</span>
                 </button>
+              </div> -->
+
+              <div class="video__slider-video video__slider-video--slide3">
+                <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" frameborder="0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
               </div>
-              <!-- src="./video/video3.mp4" -->
-              <video class="video__slider-video" poster="./images/video_posters/poster2-1x.jpg" controls></video>
             </li>
 
             <li class="video__item">
-              <div class="video__information">
+              <!-- <div class="video__information">
                 <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
                   height="40">
                 <p class="video__information-tex text-base">Promenade dans les collections mesop...</p>
                 <button class="video__information-btn">
                   <span class="visually-hidden">still</span>
                 </button>
-              </div>
-              <!-- src="./video/video4.mp4" -->
-              <video class="video__slider-video" poster="./images/video_posters/poster4-1x.jpg" controls></video>
-            </li>
+              </div> -->
 
-            <li class="video__item">
-              <div class="video__information">
-                <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
-                  height="40">
-                <p class="video__information-tex text-base">Promenade dans les collections mesop...</p>
-                <button class="video__information-btn">
-                  <span class="visually-hidden">still</span>
-                </button>
+              <div class="video__slider-video video__slider-video--slide4">
+                <iframe width="452" height="254" src="https://www.youtube.com/embed/2OR0OCr6uRE" frameborder="0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
               </div>
-              <!-- src="./video/video5.mp4" -->
-              <video class="video__slider-video" poster="./images/video_posters/poster0-1x.jpg" controls></video>
             </li>
           </ul>
 
@@ -370,35 +386,7 @@
         <div class="gallery__slider">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery1-1x.jpg" alt="" width="456" height="570">
-            </li>
-
-            <li class="gallery__item">
               <img class="gallery__img" src="./images/galery/galery2-1x.jpg" alt="" width="456" height="570">
-            </li>
-
-            <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery3-1x.jpg" alt="" width="456" height="456">
-            </li>
-
-            <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery4-1x.jpg" width="456" height="242">
-            </li>
-
-            <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery5-1x.jpg" alt="" width="456" height="456">
-            </li>
-
-            <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery6-1x.jpg" alt="" width="456" height="570">
-            </li>
-
-            <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery7-1x.jpg" alt="" width="456" height="570">
-            </li>
-
-            <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery8-1x.jpg" alt="" width="456" height="292">
             </li>
 
             <li class="gallery__item">
@@ -406,7 +394,31 @@
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery10-1x.jpg" alt="" width="456" height="456">
+              <img class="gallery__img" src="./images/galery/galery4-1x.jpg" alt="" width="456" height="456">
+            </li>
+
+            <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery6-1x.jpg" width="456" height="242">
+            </li>
+
+            <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery13-1x.jpg" alt="" width="456" height="456">
+            </li>
+
+            <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery1-1x.jpg" alt="" width="456" height="570">
+            </li>
+
+            <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery8-1x.jpg" alt="" width="456" height="570">
+            </li>
+
+            <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery3-1x.jpg" alt="" width="456" height="292">
+            </li>
+
+            <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery5-1x.jpg" alt="" width="456" height="570">
             </li>
 
             <li class="gallery__item">
@@ -414,19 +426,23 @@
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery12-1x.jpg" alt="" width="456" height="342">
+              <img class="gallery__img" src="./images/galery/galery7-1x.jpg" alt="" width="456" height="456">
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery13-1x.jpg" alt="" width="456" height="342">
-            </li>
-
-            <li class="gallery__item">
-              <img class="gallery__img" src="./images/galery/galery14-1x.jpg" alt="" width="456" height="342">
+              <img class="gallery__img" src="./images/galery/galery10-1x.jpg" alt="" width="456" height="342">
             </li>
 
             <li class="gallery__item">
               <img class="gallery__img" src="./images/galery/galery15-1x.jpg" alt="" width="456" height="342">
+            </li>
+
+            <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery12-1x.jpg" alt="" width="456" height="342">
+            </li>
+
+            <li class="gallery__item">
+              <img class="gallery__img" src="./images/galery/galery14-1x.jpg" alt="" width="456" height="342">
             </li>
           </ul>
         </div>
@@ -496,8 +512,8 @@
       </div>
     </section>
 
-    <div class="page__decor">
-      <img class="page__img" src="./images/parallax/parallax_large-1x.jpg" alt="" width="1920" height="400">
+    <div class="page__parallax">
+
     </div>
 
     <section class="contacts" id="contacts">
@@ -560,23 +576,28 @@
 
         <ul class="footer__social">
           <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--youtube" href="https://www.youtube.com/user/louvre" target="_blank"></a>
+            <a class="footer__social-link footer__social-link--youtube" href="https://www.youtube.com/user/louvre"
+              target="_blank"></a>
           </li>
 
           <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--inst" href="https://www.instagram.com/museelouvre/" target="_blank"></a>
+            <a class="footer__social-link footer__social-link--inst" href="https://www.instagram.com/museelouvre/"
+              target="_blank"></a>
           </li>
 
           <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--face" href="https://www.facebook.com/museedulouvre" target="_blank"></a>
+            <a class="footer__social-link footer__social-link--face" href="https://www.facebook.com/museedulouvre"
+              target="_blank"></a>
           </li>
 
           <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--twitt" href="http://twitter.com/museelouvre" target="_blank"></a>
+            <a class="footer__social-link footer__social-link--twitt" href="http://twitter.com/museelouvre"
+              target="_blank"></a>
           </li>
 
           <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--pint" href="https://www.pinterest.fr/museedulouvre/" target="_blank"></a>
+            <a class="footer__social-link footer__social-link--pint" href="https://www.pinterest.fr/museedulouvre/"
+              target="_blank"></a>
           </li>
         </ul>
       </div>

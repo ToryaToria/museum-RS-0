@@ -8,8 +8,11 @@
   margin-bottom: 75px;
 }
 .gallery__slider {
-  height: 1965px;
+  height: 1960px;
   position: relative;
+  overflow-y: hidden;
+
+  background-color: aquamarine;
   &::after {
     content: "";
     position: absolute;
@@ -31,14 +34,16 @@
   // align-items: center;
   justify-content: center;
   gap: 24px 36px;
-  height: 1960px;
+  height: 2718px;
 }
 
 .gallery__img {
   display: block;
   width: 456px;
   height: auto;
-  background-color: cadetblue;
+  // background-color: cadetblue;
+
+  object-fit: contain;
 
   // &--456 {
   //     height: 456px;

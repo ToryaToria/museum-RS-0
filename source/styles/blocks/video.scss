@@ -14,11 +14,29 @@
   max-width: 720px;
 }
 
-.video__video {
+// +++++++++++++===
+// .video__frame {
+//   box-sizing: border-box;
+//  width: 1440px;
+//   height: 650px;
+//   border: none;
+//   background-color: rgb(250, 215, 238);
+
+//  }
+
+.video__wrapper {
+  box-sizing: border-box;
   display: block;
   width: 1440px;
   height: 650px;
+
+  background-image: url("../../images/video_posters/poster0-1x.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+// +++++++++++++++++=
 
 .video__control-panel {
   padding: 25px 30px;
@@ -208,8 +226,28 @@
 }
 
 .video__slider-video {
+  box-sizing: border-box;
   display: block;
-  width: 100%;
+  width: 452px;
+  height: 254px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--slide1 {
+    background-image: url("../../images/video_posters/poster3-1x.jpg");
+  }
+
+    &--slide2 {
+    background-image: url("../../images/video_posters/poster1-1x.jpg");
+  }
+    &--slide3 {
+    background-image: url("../../images/video_posters/poster2-1x.jpg");
+  }
+    &--slide4 {
+    background-image: url("../../images/video_posters/poster4-1x.jpg");
+  }
 }
 
 .video__controller {

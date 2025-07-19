@@ -44,6 +44,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    border-color: $color-text-accent;
+
+    .footer__social-link {
+      background-color: $color-text-accent;
+    }
+  }
+
+  &:focus {
+    border-color: $color-point;
+    .footer__social-link {
+      background-color: $color-point;
+    }
+  }
+
+  &:active {
+    border-color: $color-accent;
+    .footer__social-link {
+      background-color: $color-accent;
+    }
+  }
 }
 
 .footer__social-link {
@@ -56,16 +78,9 @@
   mask-repeat: no-repeat;
   mask-position: center;
 
-  &:hover {
-    background-color: $color-text-accent;
-  }
-
   &:focus {
     background-color: $color-point;
-  }
-
-  &:active {
-    background-color: $color-accent;
+    outline: auto;
   }
 
   &--youtube {
