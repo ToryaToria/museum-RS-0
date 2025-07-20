@@ -13,7 +13,7 @@
 
 .welcome__item {
   box-sizing: border-box;
-  min-height: 810px;
+  min-height: 750px;
   padding: 150px 842px 0 0;
 
   background-repeat: no-repeat;
@@ -80,15 +80,21 @@
 }
 
 .welcome__item-wrapper {
-  min-width: 598px;
+  min-width: 601px;
 }
 
 .welcome__slider-title {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .welcome__slider-sybtitle {
-  margin-bottom: 75px;
+  margin-bottom: 77px;
+}
+
+.welcome__button {
+  box-sizing: border-box;
+  min-height: 75px;
+  width: fit-content;
 }
 
 .welcome__slider-controller {
@@ -100,7 +106,7 @@
   background-color: $color-bg-dark;
 
   display: flex;
-  gap: 55px;
+  // gap: 55px;
   align-items: center;
 }
 
@@ -109,15 +115,20 @@
     $size: 22px,
     $line-height: 40px,
     $weight: 400,
-    $spacing: 0,
+    // $spacing: 2px,
     $color: $color-white
   );
+
+  display: flex;
+  gap: 10px;
+  width: 76px;
 }
 
 .welcome__slider-pagination {
   display: flex;
   gap: 25px;
   align-items: center;
+  margin-left: 55px;
 }
 
 .welcome__slider-bullit {
@@ -141,6 +152,7 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-left: 60px;
 }
 
 .welcome__slider-arr {
@@ -148,7 +160,7 @@
   width: 30px;
   height: 8px;
 
-      background-color: $color-white;
+  background-color: $color-white;
 
   mask-repeat: no-repeat;
   mask-size: contain;

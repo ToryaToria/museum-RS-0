@@ -13,7 +13,7 @@
   gap: 60px;
 }
 
-.explore__text {
+.explore__text:not(:last-child) {
   margin-bottom: 25px;
 }
 

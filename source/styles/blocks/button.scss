@@ -1,6 +1,7 @@
 .button {
   @include btn-reset;
-  padding: 25px 64px;
+  display: block;
+  padding: 26px 62px;
   border-radius: 10px;
   background-color: $color-btn;
 

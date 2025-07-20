@@ -6,7 +6,7 @@
 .visiting__list {
   @include list-reset;
   display: flex;
-  gap: 60px;
+  gap: 76px 60px;
   flex-wrap: wrap;
 }
 
@@ -30,14 +30,13 @@ margin-bottom: 75px;
 display: block;
 width: 440px;
 height: 285px;
-background-color: beige;
-margin-bottom: 25px;
+margin-bottom: 26px;
 }
 
 .visiting__title-card {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.visiting__text {
-  margin-bottom: 10px;
+.visiting__text:not(:last-child)  {
+  margin-bottom: 14px;
 }

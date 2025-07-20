@@ -1,6 +1,6 @@
 .contacts {
    padding-top: 75px;
-  padding-bottom: 74px;
+  padding-bottom: 72px;
 }
 
 .contacts__title {
@@ -16,16 +16,16 @@ gap: 198px;
   display: block;
   width: 960px;
   height: 620px;
-  object-fit: cover;
+  object-fit: contain;
   // background-color: antiquewhite;
 }
 
 .contacts__address  {
-margin-bottom: 50px;
+margin-bottom: 47px;
 }
 
-.contacts__text {
-margin-bottom: 25px;
+.contacts__text:not(:last-child) {
+margin-bottom: 12px;
 }
 
 .contacts__link {
