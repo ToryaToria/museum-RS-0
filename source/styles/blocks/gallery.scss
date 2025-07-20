@@ -41,14 +41,16 @@
   display: block;
   width: 456px;
   height: auto;
-  // background-color: cadetblue;
 
   object-fit: contain;
 
-  // &--456 {
-  //     height: 456px;
+   &--13 {
+      height: 355px;
+  }
 
-  // }
+  &--15 {
+      height: 700px;
+  }
 }
 
 .gallery__item {
