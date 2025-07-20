@@ -1,0 +1,30 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+
+// Base ---------------------------------
+
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/fonts";
+@import "./base/fonts-styles";
+@import "./base/page";
+@import "./base/visually-hidden";
+@import "./base/container";
+
+// Blocks ---------------------------------
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/welcome.scss";
+@import "./blocks/button.scss";
+@import "./blocks/visiting.scss";
+@import "./blocks/explore.scss";
+@import "./blocks/video.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/tickets.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/form.scss";
+

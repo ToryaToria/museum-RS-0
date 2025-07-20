@@ -1,0 +1,41 @@
+.page {
+  /*  для стики-футера */
+  // height: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  // position: relative;
+  margin: 0 auto;
+  min-width: $mobile-width;
+
+  background-color: $color-white;
+
+  /*  для стики-футера */
+  // display: flex;
+  // min-height: 100%;
+  // flex-direction: column;
+}
+
+// .page__main {
+//   /*  для стики-футера */
+//   flex-grow: 1;
+// }
+
+// * {
+//   outline: auto;
+// }
+
+.page__parallax {
+  margin: 0 auto;
+  width: auto;
+  height: 400px;
+  background-color: antiquewhite;
+  // background-size: 1920px 1102px;
+  background-size: cover;
+
+  background-position:center ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("../../images/parallax/parallax-2x.webp");
+}

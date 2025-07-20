@@ -1,0 +1,42 @@
+.visiting {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.visiting__list {
+  @include list-reset;
+  display: flex;
+  gap: 76px 60px;
+  flex-wrap: wrap;
+}
+
+.visiting__title {
+margin-bottom: 75px;
+}
+
+.visiting__card {
+  @include list-reset;
+}
+
+.visiting__link {
+  display: block;
+  text-decoration: none;
+  color: $color-black;
+
+  // background-color: blue;
+}
+
+.visiting__img {
+display: block;
+width: 440px;
+height: 285px;
+margin-bottom: 26px;
+}
+
+.visiting__title-card {
+  margin-bottom: 12px;
+}
+
+.visiting__text:not(:last-child)  {
+  margin-bottom: 14px;
+}

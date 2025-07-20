@@ -1,0 +1,38 @@
+.contacts {
+   padding-top: 75px;
+  padding-bottom: 72px;
+}
+
+.contacts__title {
+margin-bottom: 75px;
+}
+
+.contacts__wrapper {
+display: flex;
+gap: 25px;
+justify-content: space-between;
+
+}
+
+.contacts__img {
+  display: block;
+  width: 960px;
+  height: 620px;
+  object-fit: contain;
+
+  // background-color: antiquewhite;
+}
+
+.contacts__address  {
+margin-bottom: 47px;
+}
+
+.contacts__text:not(:last-child) {
+margin-bottom: 12px;
+}
+
+.contacts__link {
+  &:hover {
+    text-decoration: underline;
+  }
+}

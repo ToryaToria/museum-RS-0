@@ -1,1 +1,2 @@
-# museum-RS-0
+# museum
+## проект курса RS-0

@@ -1,0 +1,179 @@
+.welcome {
+  background-color: $color-bg-dark;
+}
+
+.welcome__slider {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.welcome__list {
+  @include list-reset;
+}
+
+.welcome__item {
+  box-sizing: border-box;
+  min-height: 750px;
+  padding: 150px 842px 0 0;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  background-image: linear-gradient(
+      to right,
+      black,
+      15%,
+      black,
+      45%,
+      transparent
+    ),
+    url("../../images/welcome-slider/welcome_1-1x.jpg");
+
+  &--2 {
+    background-image: linear-gradient(
+        to right,
+        black,
+        15%,
+        black,
+        45%,
+        transparent
+      ),
+      url("../../images/welcome-slider/welcome_2-1x.jpg");
+  }
+
+  &--3 {
+    background-image: linear-gradient(
+        to right,
+        black,
+        15%,
+        black,
+        45%,
+        transparent
+      ),
+      url("../../images/welcome-slider/welcome_3-1x.jpg");
+  }
+
+  &--4 {
+    background-image: linear-gradient(
+        to right,
+        black,
+        15%,
+        black,
+        45%,
+        transparent
+      ),
+      url("../../images/welcome-slider/welcome_4-1x.jpg");
+  }
+
+  &--5 {
+    background-image: linear-gradient(
+        to right,
+        black,
+        15%,
+        black,
+        45%,
+        transparent
+      ),
+      url("../../images/welcome-slider/welcome_5-1x.jpg");
+  }
+}
+
+.welcome__item-wrapper {
+  min-width: 601px;
+}
+
+.welcome__slider-title {
+  margin-bottom: 27px;
+}
+
+.welcome__slider-sybtitle {
+  margin-bottom: 77px;
+}
+
+.welcome__button {
+  box-sizing: border-box;
+  min-height: 75px;
+  width: fit-content;
+}
+
+.welcome__slider-controller {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  padding: 40px 74px;
+  background-color: $color-bg-dark;
+
+  display: flex;
+  // gap: 55px;
+  align-items: center;
+}
+
+.welcome__slider-str {
+  @include font(
+    $size: 22px,
+    $line-height: 40px,
+    $weight: 400,
+    // $spacing: 2px,
+    $color: $color-white
+  );
+
+  display: flex;
+  gap: 10px;
+  width: 76px;
+}
+
+.welcome__slider-pagination {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-left: 55px;
+}
+
+.welcome__slider-bullit {
+  @include btn-reset;
+  width: 16px;
+  height: 16px;
+  background-color: $color-white;
+
+  &--current {
+    background-color: $color-point;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-accent;
+  }
+}
+
+.welcome__slider-navigation {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.welcome__slider-arr {
+  @include btn-reset;
+  width: 30px;
+  height: 8px;
+
+  background-color: $color-white;
+
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  mask-image: url("../../icons/arr_left.svg");
+
+  &--right {
+    transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-accent;
+  }
+}

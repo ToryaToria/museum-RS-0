@@ -1,0 +1,13 @@
+.logo {
+display: flex;
+align-items: baseline;
+gap: 25px;
+}
+
+.logo__img {
+  display: block;
+  object-fit: contain;
+  width: 49px;
+  height: 26px;
+  // background-color: aqua;
+}

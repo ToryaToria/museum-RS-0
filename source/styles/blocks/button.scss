@@ -1,0 +1,14 @@
+.button {
+  @include btn-reset;
+  display: block;
+  padding: 26px 62px;
+  border-radius: 10px;
+  background-color: $color-btn;
+
+  &:hover,
+    &:focus,
+  &:active {
+    background-color: $color-accent;
+  }
+
+}

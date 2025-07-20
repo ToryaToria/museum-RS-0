@@ -1,0 +1,132 @@
+.footer {
+  padding-top: 84px;
+  padding-bottom: 50px;
+  background-color: $color-bg-dark;
+  padding-bottom: 500px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 3px solid $color-icon-line;
+  padding-bottom: 47px;
+ }
+
+.footer__nav {
+  @include list-reset;
+   margin-left: 141px;
+  margin-top: 6px;
+
+  display: flex;
+   flex-direction: column;
+  gap: 29px 150px;
+  flex-wrap: wrap;
+
+  // justify-content: flex-start;
+    align-items: flex-start;
+
+  height: 128px;
+  width: 363px;
+  max-width: 680px;
+
+.nav__item {
+  flex-grow: 0;
+  width: 107px;
+}
+}
+
+.footer__social {
+  @include list-reset;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+.footer__social-item {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border-color: $color-text-accent;
+
+    .footer__social-link {
+      background-color: $color-text-accent;
+    }
+  }
+
+  &:focus {
+    border-color: $color-point;
+    .footer__social-link {
+      background-color: $color-point;
+    }
+  }
+
+  &:active {
+    border-color: $color-accent;
+    .footer__social-link {
+      background-color: $color-accent;
+    }
+  }
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  background-color: $color-white;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  &:focus {
+    background-color: $color-point;
+    outline: auto;
+  }
+
+  &--youtube {
+    mask-size: 23px 16px;
+    mask-image: url("../../icons/youtube.svg");
+  }
+
+  &--inst {
+    mask-size: 20px 20px;
+    mask-image: url("../../icons/inst.svg");
+  }
+
+  &--face {
+    mask-size: 13px 20px;
+    mask-image: url("../../icons/face.svg");
+  }
+
+  &--twitt {
+    mask-size: 20px 16px;
+    mask-image: url("../../icons/twitter.svg");
+  }
+
+  &--pint {
+    mask-size: 20px 20px;
+    mask-image: url("../../icons/pint.svg");
+  }
+}
+
+.footer__copyright {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright:last-child {
+  margin-right: 19px;
+}
