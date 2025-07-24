@@ -38,4 +38,8 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: url("../../images/parallax/parallax-2x.webp");
+
+    @include media-tablet {
+      height: 300px;
+    }
 }

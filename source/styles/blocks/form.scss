@@ -74,6 +74,10 @@
     text-align: left;
     margin-bottom: 26px;
   }
+
+  @include media-tablet {
+    margin-bottom: 36px;
+  }
 }
 
 .form__label {
@@ -85,26 +89,24 @@
 }
 
 .form__text {
- @include font($size: 22px, $line-height: 38.5px, $spacing: 1.1px);
+  @include font($size: 22px, $line-height: 38.5px, $spacing: 1.1px);
   margin-bottom: 8px;
 
   @include media-desktop {
-
     line-height: 36.5px;
 
-     font-size: 22px;
+    font-size: 22px;
     letter-spacing: 1.3px;
-      margin-bottom: 4px;
+    margin-bottom: 4px;
   }
 
   @include media-tablet {
-    font-size: 18px;
+    letter-spacing: 1.5px;
   }
 
   @include media-mobile {
     font-size: 16px;
   }
-
 }
 
 .form__wrapper-counter {
@@ -118,6 +120,10 @@
 
   @include media-desktop {
     margin-bottom: 24px;
+  }
+
+  @include media-tablet {
+    margin-bottom: 22px;
   }
 }
 
@@ -160,12 +166,18 @@ input[type="number"] {
 
   @include media-desktop {
     text-align: left;
-      margin-top: 27px;
-        letter-spacing: 4px;
+    margin-top: 27px;
+    letter-spacing: 4px;
+  }
+
+  @include media-tablet {
+    margin-top: 40px;
   }
 }
 
 .form__btn {
+    @include font($size: 22px, $line-height: 38.5px, $spacing: 1.1px);
+
   @include btn-reset;
   display: block;
   color: $color-white;
@@ -183,8 +195,14 @@ input[type="number"] {
     color: $color-black;
   }
 
-    @include media-desktop {
-  margin-top: 72px;
-  letter-spacing: 4.37px;
-    }
+  @include media-desktop {
+    margin-top: 72px;
+    letter-spacing: 4.37px;
+  }
+
+  @include media-tablet {
+    margin-top: 40px;
+        letter-spacing: 3.3px;
+
+  }
 }

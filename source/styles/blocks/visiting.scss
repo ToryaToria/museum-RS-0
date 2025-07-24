@@ -6,6 +6,11 @@
     padding-top: 60px;
     padding-bottom: 61px;
   }
+
+  @include media-tablet {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
 }
 
 .visiting__list {
@@ -19,6 +24,12 @@
     padding-right: 108px;
     gap: 61px 108px;
   }
+
+  @include media-tablet {
+    gap: 42px 56px;
+       padding-left: 56px;
+    padding-right: 56px;
+  }
 }
 
 .visiting__title {
@@ -27,6 +38,10 @@
   @include media-desktop {
     margin-bottom: 60px;
   }
+
+    @include media-tablet {
+        margin-bottom: 40px;
+    }
 }
 
 .visiting__card {
@@ -51,6 +66,12 @@
     width: 330px;
     height: 215px;
     margin-bottom: 27px;
+  }
+
+  @include media-tablet {
+    width: 280px;
+    height: 180px;
+    margin-bottom: 25px;
   }
 }
 

@@ -5,6 +5,10 @@
 .welcome__slider {
   position: relative;
   padding-bottom: 60px;
+
+  @include media-tablet {
+    padding-bottom: 0;
+  }
 }
 
 .welcome__list {
@@ -82,10 +86,42 @@
     padding: 50px 539px 0 0;
     min-height: 525px;
   }
+
+  @include media-tablet {
+    padding: 0;
+    min-height: 861px;
+
+    // background-color: aquamarine;
+        background-position: bottom 100px center;
+
+
+    background-image: url("../../images/welcome-slider/welcome_1-1x.jpg");
+
+    &--2 {
+      background-image: url("../../images/welcome-slider/welcome_2-1x.jpg");
+    }
+
+    &--3 {
+      background-image: url("../../images/welcome-slider/welcome_3-1x.jpg");
+    }
+
+    &--4 {
+      background-image: url("../../images/welcome-slider/welcome_4-1x.jpg");
+    }
+
+    &--5 {
+      background-image: url("../../images/welcome-slider/welcome_5-1x.jpg");
+    }
+  }
 }
 
 .welcome__item-wrapper {
   min-width: 601px;
+
+  @include media-tablet {
+    min-width: inherit;
+    text-align: center;
+  }
 }
 
 .welcome__slider-title {
@@ -94,6 +130,11 @@
   @include media-desktop {
     line-height: 90px;
     margin-bottom: 28px;
+  }
+
+  @include media-tablet {
+    line-height: 60px;
+    margin-bottom: 25px;
   }
 }
 
@@ -105,13 +146,17 @@
   }
 }
 
-.welcome__button {
+.welcome .welcome__button {
   box-sizing: border-box;
   min-height: 75px;
   width: fit-content;
 
   @include media-desktop {
     min-height: 60px;
+  }
+
+  @include media-tablet {
+    display: none;
   }
 }
 
@@ -129,6 +174,15 @@
 
   @include media-desktop {
     padding: 40px 75px 40px 224px;
+  }
+
+  @include media-tablet {
+    box-sizing: border-box;
+    width: 100%;
+    // background-color: antiquewhite;
+    padding: 30px;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 
@@ -156,9 +210,9 @@
   align-items: center;
   margin-left: 55px;
 
-    @include media-desktop {
-      margin-left: 42px;
-    }
+  @include media-desktop {
+    margin-left: 42px;
+  }
 }
 
 .welcome__slider-bullit {
@@ -189,10 +243,9 @@
   align-items: center;
   margin-left: 60px;
 
-
-    @include media-desktop {
-      margin-left: 45px;
-    }
+  @include media-desktop {
+    margin-left: 45px;
+  }
 }
 
 .welcome__slider-arr {

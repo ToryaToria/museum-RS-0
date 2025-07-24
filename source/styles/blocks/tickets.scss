@@ -6,6 +6,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @include media-tablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .tickets__title {
@@ -14,6 +19,10 @@
   @include media-desktop {
     margin-bottom: 60px;
   }
+
+  @include media-tablet {
+        margin-bottom: 38px;
+    }
 }
 
 .tickets__img {
@@ -27,6 +36,11 @@
     width: 700px;
     height: 440px;
   }
+
+    @include media-tablet {
+      width: 444px;
+    height: 340px;
+    }
 }
 
 .tickets__wrapper {
@@ -36,4 +50,8 @@
   @include media-desktop {
     gap: 80px;
   }
+
+    @include media-tablet {
+    gap: 60px;
+    }
 }

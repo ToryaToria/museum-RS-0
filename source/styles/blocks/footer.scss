@@ -7,6 +7,11 @@
   @include media-desktop {
     padding-top: 60px;
   }
+
+  @include media-tablet {
+    padding-top: 40px;
+    // padding-bottom: 67px;
+  }
 }
 
 .footer__wrapper {
@@ -16,7 +21,7 @@
   padding-bottom: 47px;
 
   @include media-desktop {
-      padding-bottom: 49px;
+    padding-bottom: 49px;
   }
 }
 
@@ -45,6 +50,13 @@
   @include media-desktop {
     margin-left: 40px;
     gap: 30px 52px;
+  }
+
+  @include media-tablet {
+    margin-top: 19px;
+    margin-left: 99px;
+        gap: 30px 52px;
+
   }
 }
 
