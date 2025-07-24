@@ -6,7 +6,39 @@
   padding-top: 58px;
   padding-bottom: 60px;
 
+  @include media-desktop {
+    padding-top: 48px;
+    padding-bottom: 49px;
+  }
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__nav {
+  @include media-desktop {
+    display: none;
+  }
+}
+
+.header__burger {
+  @include btn-reset;
+  display: block;
+  width: 32px;
+  height: 18px;
+
+  cursor: pointer;
+  background-color: $color-white;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: auto;
+  mask-image: url("../../icons/youtube.svg");
+
+  &:focus,
+  &:hover {
+    background-color: $color-point;
+    outline: auto;
+  }
 }

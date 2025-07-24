@@ -77,6 +77,11 @@
       ),
       url("../../images/welcome-slider/welcome_5-1x.jpg");
   }
+
+  @include media-desktop {
+    padding: 50px 539px 0 0;
+    min-height: 525px;
+  }
 }
 
 .welcome__item-wrapper {
@@ -85,16 +90,29 @@
 
 .welcome__slider-title {
   margin-bottom: 27px;
+
+  @include media-desktop {
+    line-height: 90px;
+    margin-bottom: 28px;
+  }
 }
 
 .welcome__slider-sybtitle {
   margin-bottom: 77px;
+
+  @include media-desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .welcome__button {
   box-sizing: border-box;
   min-height: 75px;
   width: fit-content;
+
+  @include media-desktop {
+    min-height: 60px;
+  }
 }
 
 .welcome__slider-controller {
@@ -108,6 +126,10 @@
   display: flex;
   // gap: 55px;
   align-items: center;
+
+  @include media-desktop {
+    padding: 40px 75px 40px 224px;
+  }
 }
 
 .welcome__slider-str {
@@ -119,6 +141,10 @@
     $color: $color-white
   );
 
+  @include media-desktop {
+    font-size: 20px;
+  }
+
   display: flex;
   gap: 10px;
   width: 76px;
@@ -129,6 +155,10 @@
   gap: 25px;
   align-items: center;
   margin-left: 55px;
+
+    @include media-desktop {
+      margin-left: 42px;
+    }
 }
 
 .welcome__slider-bullit {
@@ -146,6 +176,11 @@
   &:active {
     background-color: $color-accent;
   }
+
+  @include media-desktop {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .welcome__slider-navigation {
@@ -153,6 +188,11 @@
   gap: 20px;
   align-items: center;
   margin-left: 60px;
+
+
+    @include media-desktop {
+      margin-left: 45px;
+    }
 }
 
 .welcome__slider-arr {

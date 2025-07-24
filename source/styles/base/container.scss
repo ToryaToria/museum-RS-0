@@ -1,17 +1,18 @@
 .container {
   box-sizing: border-box;
-  // max-width: $large-width;
-  width: $large-width;
+  max-width: $large-width;
+  // width: $large-width;
 
   margin: 0 auto;
   padding-left: 240px;
   padding-right: 240px;
 
-  //     @include media-desktop {
-  //     padding-left: 20px;
-  //     padding-right: 20px;
-  //     width: $desktop-width;
-  //   }
+  @include media-desktop {
+    padding-left: 20px;
+    padding-right: 20px;
+    // width: $desktop-width;
+    max-width: $desktop-width;
+  }
 
   //   @include media-tablet {
   //     width: $tablet-width;

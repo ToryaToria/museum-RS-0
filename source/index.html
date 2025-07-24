@@ -18,7 +18,11 @@
         <span class="text-logo">Louvre</span>
       </div>
 
-      <nav class="nav">
+      <button class="header__burger" type="button">
+        <span class="visually-hidden">burger</span>
+      </button>
+
+      <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link text-nav" href="#visiting">Visiting</a>
@@ -234,7 +238,7 @@
             It was cleaned in 1984 to remove a <span class="explore__color">"yellow veil"</span>of dust that had
             gathered since the previous restoration in the 19th century.
           </p>
-          <p class="explore__text text-light text-light text-light--bg-dark">
+          <p class="explore__text explore__text--last text-light text-light text-light--bg-dark">
             The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it
             looked different.
           </p>
@@ -260,7 +264,7 @@
         <div>
 
           <div class="video__wrapper">
-            <iframe width="1440" height="650" src="https://www.youtube.com/embed/zp1BXPX8jcU" frameborder="0"
+            <iframe class="video__iframe" width="1440" height="650" src="https://www.youtube.com/embed/zp1BXPX8jcU" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
             </iframe>
@@ -299,7 +303,7 @@
               <!-- src="./video/video1.mp4" -->
 
               <div class="video__slider-video video__slider-video--slide1">
-                <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" frameborder="0"
+                <iframe class="video__iframe" width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" frameborder="0"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
@@ -318,7 +322,7 @@
               </div> -->
 
               <div class="video__slider-video video__slider-video--slide2">
-                <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" frameborder="0"
+                <iframe class="video__iframe" width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" frameborder="0"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
@@ -337,7 +341,7 @@
               </div> -->
 
               <div class="video__slider-video video__slider-video--slide3">
-                <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" frameborder="0"
+                <iframe class="video__iframe" width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" frameborder="0"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
@@ -356,7 +360,7 @@
               </div> -->
 
               <div class="video__slider-video video__slider-video--slide4">
-                <iframe width="452" height="254" src="https://www.youtube.com/embed/2OR0OCr6uRE" frameborder="0"
+                <iframe class="video__iframe" width="452" height="254" src="https://www.youtube.com/embed/2OR0OCr6uRE" frameborder="0"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
@@ -392,7 +396,8 @@
         <div class="gallery__slider">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img class="gallery__img gallery__img--1" src="./images/galery/galery2-1x.jpg" alt="" width="456" height="570">
+              <img class="gallery__img gallery__img--1" src="./images/galery/galery2-1x.jpg" alt="" width="456"
+                height="570">
             </li>
 
             <li class="gallery__item">
@@ -408,7 +413,8 @@
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img gallery__img--13" src="./images/galery/galery13-1x.jpg" alt="" width="456" height="456">
+              <img class="gallery__img gallery__img--13" src="./images/galery/galery13-1x.jpg" alt="" width="456"
+                height="456">
             </li>
 
             <li class="gallery__item">
@@ -448,7 +454,8 @@
             </li>
 
             <li class="gallery__item">
-              <img class="gallery__img gallery__img--15" src="./images/galery/galery14-1x.jpg" alt="" width="456" height="342">
+              <img class="gallery__img gallery__img--15" src="./images/galery/galery14-1x.jpg" alt="" width="456"
+                height="342">
             </li>
           </ul>
         </div>
@@ -459,7 +466,7 @@
       <div class="container">
         <h2 class="tickets__title title title--section title--underline">BUY TICKETS</h2>
         <div class="tickets__wrapper">
-          <img class="tickets__img" src="./images/tickets/tickets-1x.jpg" alt="" width="720" height="550">
+          <img class="tickets__img" src="./images/tickets/tickets_1920-1x.jpg" alt="" width="720" height="550">
 
           <form class="tickets__form form" action="" method="post" autocomplete="off">
             <div class="form__wrapper">
@@ -493,14 +500,14 @@
               <div class="form__wrapper-amount">
                 <h3 class="form__title text-bold">Amount</h3>
 
-                <p class="form__text text-light"> Basic 18+</p>
+                <p class="form__text"> Basic 18+</p>
                 <div class="form__wrapper-counter">
                   <button class="form_count-btn" type="button">–</button>
                   <input class="form__number" type="number" min="0" value="1">
                   <button class="form_count-btn" type="button">+</button>
                 </div>
 
-                <p class="form__text text-light">Senior 65+</p>
+                <p class="form__text">Senior 65+</p>
                 <div class="form__wrapper-counter">
                   <button class="form_count-btn" type="button">–</button>
                   <input class="form__number" type="number" min="0" value="1">
@@ -528,16 +535,17 @@
         <div class="contacts__wrapper">
           <div>
             <h3 class="contacts__address text-address">Palais Royal<br>Musee du Louvre</h3>
-            <p class="contacts__text text-light">address:
+            <p class="contacts__text">address:
               75001 Paris, France</p>
-            <p class="contacts__text text-light">phone: <a class="contacts__link text-light"
+            <p class="contacts__text">phone: <a class="contacts__link text-light"
                 href="tel:+330140205050">+33(0) 1 40 20 50 50</a></p>
-            <p class="contacts__text text-light">mail: <a class="contacts__link text-light"
+            <p class="contacts__text">mail: <a class="contacts__link text-light"
                 href="mailto:info@louvre.fr">info@louvre.fr</a></p>
           </div>
 
           <div>
-            <img class="contacts__img" src="./images/maps/map_1920-1x.jpg" alt="карта сокровищ" width="960" height="620">
+            <img class="contacts__img" src="./images/maps/map_1920-1x.jpg" alt="карта сокровищ" width="960"
+              height="620">
           </div>
         </div>
       </div>

@@ -5,10 +5,13 @@
   border-radius: 10px;
   background-color: $color-btn;
 
+  @include media-desktop {
+    padding: 21px 45px;
+  }
+
   &:hover,
-    &:focus,
+  &:focus,
   &:active {
     background-color: $color-accent;
   }
-
 }

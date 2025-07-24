@@ -1,11 +1,18 @@
 .gallery {
   padding-top: 75px;
-  // padding-bottom: 75px;
   background-color: $color-bg-dark;
+
+  @include media-desktop {
+    padding-top: 60px;
+  }
 }
 
 .gallery__title {
   margin-bottom: 75px;
+
+  @include media-desktop {
+      margin-bottom: 60px;
+  }
 }
 .gallery__slider {
   height: 1960px;
@@ -23,6 +30,10 @@
     height: 360px;
     background: linear-gradient(transparent, black);
   }
+
+    @include media-desktop {
+      height: 1265px;
+    }
 }
 
 .gallery__list {

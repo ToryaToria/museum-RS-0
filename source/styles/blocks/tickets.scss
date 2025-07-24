@@ -1,10 +1,19 @@
 .tickets {
   padding-top: 75px;
   padding-bottom: 75px;
+
+  @include media-desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .tickets__title {
   margin-bottom: 75px;
+
+  @include media-desktop {
+    margin-bottom: 60px;
+  }
 }
 
 .tickets__img {
@@ -13,10 +22,18 @@
   height: 550px;
   // background-color: antiquewhite;
   object-fit: cover;
+
+  @include media-desktop {
+    width: 700px;
+    height: 440px;
+  }
 }
 
 .tickets__wrapper {
   display: flex;
   gap: 60px;
-}
 
+  @include media-desktop {
+    gap: 80px;
+  }
+}

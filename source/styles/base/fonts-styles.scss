@@ -18,6 +18,9 @@
       height: 3px;
       background-color: $color-line;
     }
+    @include media-desktop {
+      padding-bottom: 24px;
+    }
   }
 
   @include media-desktop {
@@ -44,6 +47,7 @@
 
   @include media-desktop {
     font-size: 24px;
+    letter-spacing: 3.3px;
   }
   @include media-tablet {
     font-size: 20px;
@@ -56,9 +60,11 @@
 
 .text-btn {
   @include font($size: 22px, $color: $color-white, $spacing: 3.5px);
-text-decoration: none;
+  text-decoration: none;
+
   @include media-desktop {
     font-size: 20px;
+    letter-spacing: 3.1px;
   }
   @include media-tablet {
     font-size: 22px;
@@ -70,7 +76,12 @@ text-decoration: none;
 }
 
 .text-nav {
-  @include font($size: 22px, $weight: 100, $color: $color-white, $spacing: 3.1px);
+  @include font(
+    $size: 22px,
+    $weight: 100,
+    $color: $color-white,
+    $spacing: 3.1px
+  );
 
   text-decoration: none;
 
@@ -124,7 +135,11 @@ text-decoration: none;
 
     @include media-desktop {
       font-size: 28px;
-      letter-spacing: 0.03em;
+      letter-spacing: 3px;
+      // padding-bottom: 10px;
+      &::after {
+        width: 150px;
+      }
     }
 
     @include media-tablet {
@@ -144,6 +159,7 @@ text-decoration: none;
 
   @include media-desktop {
     font-size: 20px;
+    letter-spacing: 0.9px;
   }
   @include media-tablet {
     font-size: 18px;
@@ -161,6 +177,7 @@ text-decoration: none;
 
   @include media-desktop {
     font-size: 16px;
+    letter-spacing: 0.9px;
   }
 }
 
@@ -169,11 +186,14 @@ text-decoration: none;
 
   text-decoration: none;
   &--bg-dark {
-color: $color-white;
+    color: $color-white;
   }
+
 
   @include media-desktop {
     font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 36.5px;
   }
 
   @include media-tablet {
@@ -188,6 +208,10 @@ color: $color-white;
 .text-bold {
   @include font($size: 28px, $weight: 700, $spacing: 1.5);
 
+  @include media-desktop {
+    letter-spacing: 2.5px;
+  }
+
   @include media-mobile {
     font-size: 16px;
   }
@@ -198,6 +222,7 @@ color: $color-white;
 
   @include media-desktop {
     font-size: 24px;
+    letter-spacing: 1.4px;
   }
 
   @include media-tablet {
@@ -210,7 +235,13 @@ color: $color-white;
 }
 
 .text-copyright {
-  @include font($size: 22px, $line-height: 22px, $weight: 100, $color: $color-white, $spacing: 3.1px);
+  @include font(
+    $size: 22px,
+    $line-height: 22px,
+    $weight: 100,
+    $color: $color-white,
+    $spacing: 3.1px
+  );
 
   @include media-mobile {
     font-size: 16px;
