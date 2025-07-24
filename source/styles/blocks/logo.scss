@@ -10,4 +10,9 @@ gap: 25px;
   width: 49px;
   height: 26px;
   // background-color: aqua;
+
+  @include media-mobile {
+  width: 29px;
+  height: 16px;
+    }
 }

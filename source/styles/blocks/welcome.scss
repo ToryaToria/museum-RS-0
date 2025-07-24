@@ -92,8 +92,7 @@
     min-height: 861px;
 
     // background-color: aquamarine;
-        background-position: bottom 100px center;
-
+    background-position: bottom 100px center;
 
     background-image: url("../../images/welcome-slider/welcome_1-1x.jpg");
 
@@ -112,6 +111,11 @@
     &--5 {
       background-image: url("../../images/welcome-slider/welcome_5-1x.jpg");
     }
+  }
+
+  @include media-mobile {
+    min-height: 544px;
+    background-position: bottom 74px center;
   }
 }
 
@@ -135,6 +139,11 @@
   @include media-tablet {
     line-height: 60px;
     margin-bottom: 25px;
+  }
+
+  @include media-mobile {
+    line-height: 40px;
+    padding-top: 5px;
   }
 }
 
@@ -179,10 +188,13 @@
   @include media-tablet {
     box-sizing: border-box;
     width: 100%;
-    // background-color: antiquewhite;
     padding: 30px;
     margin: 0 auto;
     justify-content: center;
+  }
+
+  @include media-mobile {
+    padding: 20px;
   }
 }
 
@@ -195,13 +207,21 @@
     $color: $color-white
   );
 
-  @include media-desktop {
-    font-size: 20px;
-  }
-
   display: flex;
   gap: 10px;
   width: 76px;
+
+  @include media-desktop {
+    font-size: 20px;
+  }
+  @include media-mobile {
+    font-size: 16px;
+    gap: 5px;
+      width: 40px;
+       letter-spacing: 0,
+
+
+  }
 }
 
 .welcome__slider-pagination {
@@ -212,6 +232,11 @@
 
   @include media-desktop {
     margin-left: 42px;
+  }
+
+  @include media-mobile {
+    gap: 10px;
+    margin-left: 35px;
   }
 }
 
@@ -235,6 +260,11 @@
     width: 12px;
     height: 12px;
   }
+
+  @include media-mobile {
+    width: 7px;
+    height: 7px;
+  }
 }
 
 .welcome__slider-navigation {
@@ -245,6 +275,11 @@
 
   @include media-desktop {
     margin-left: 45px;
+  }
+
+  @include media-mobile {
+    gap: 15px;
+    margin-left: 25px;
   }
 }
 
@@ -268,5 +303,9 @@
   &:focus,
   &:active {
     background-color: $color-accent;
+  }
+
+  @include media-mobile {
+    width: 20px;
   }
 }

@@ -21,8 +21,12 @@
   }
 
   @include media-tablet {
-        margin-bottom: 38px;
-    }
+    margin-bottom: 38px;
+  }
+
+  @include media-mobile {
+    margin-bottom: 40px;
+  }
 }
 
 .tickets__img {
@@ -37,10 +41,16 @@
     height: 440px;
   }
 
-    @include media-tablet {
-      width: 444px;
+  @include media-tablet {
+    width: 444px;
     height: 340px;
-    }
+  }
+
+  @include media-mobile {
+    width: 380px;
+    height: 160px;
+    margin-bottom: 40px;
+  }
 }
 
 .tickets__wrapper {
@@ -51,7 +61,12 @@
     gap: 80px;
   }
 
-    @include media-tablet {
+  @include media-tablet {
     gap: 60px;
-    }
+  }
+
+  @include media-mobile {
+    flex-direction: column;
+    gap: 0;
+  }
 }

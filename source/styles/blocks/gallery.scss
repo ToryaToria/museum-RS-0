@@ -14,12 +14,11 @@
   margin-bottom: 75px;
 
   @include media-desktop {
-      margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 
   @include media-tablet {
-         margin-bottom: 40px;
-
+    margin-bottom: 40px;
   }
 }
 .gallery__slider {
@@ -39,14 +38,17 @@
     background: linear-gradient(transparent, black);
   }
 
-    @include media-desktop {
-      height: 1265px;
-    }
+  @include media-desktop {
+    height: 1265px;
+  }
 
-      @include media-tablet {
-            height: 1080px;
+  @include media-tablet {
+    height: 1080px;
+  }
 
-      }
+  @include media-mobile {
+    height: 637px;
+  }
 }
 
 .gallery__list {
@@ -68,12 +70,12 @@
 
   object-fit: contain;
 
-   &--13 {
-      height: 355px;
+  &--13 {
+    height: 355px;
   }
 
   &--15 {
-      height: 700px;
+    height: 700px;
   }
 }
 

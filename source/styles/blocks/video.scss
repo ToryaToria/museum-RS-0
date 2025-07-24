@@ -11,6 +11,11 @@
     padding-top: 40px;
     padding-bottom: 80px;
   }
+
+  @include media-mobile {
+    padding-top: 36px;
+    padding-bottom: 40px;
+  }
 }
 
 .video__title-wrapper {
@@ -70,6 +75,11 @@
     width: 728px;
     height: 329px;
   }
+
+  @include media-mobile {
+    width: 380px;
+    height: 172px;
+  }
 }
 
 .video__iframe {
@@ -94,6 +104,11 @@
 
   @include media-tablet {
     margin-bottom: 20px;
+  }
+
+  @include media-mobile {
+    height: 29px;
+    margin-bottom: 40px;
   }
 }
 
@@ -255,8 +270,11 @@
 
   @include media-tablet {
     gap: 20px;
-      margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
 
+  @include media-mobile {
+    margin-bottom: 40px;
   }
 }
 
@@ -342,6 +360,11 @@
     width: 354px;
     height: 199px;
   }
+
+  @include media-mobile {
+    width: 180px;
+    height: 101px;
+  }
 }
 
 .video__controller {
@@ -400,9 +423,13 @@
     background-color: $color-btn;
   }
 
-    @include media-tablet {
+  @include media-tablet {
     width: 10px;
-  height: 10px;
+    height: 10px;
+  }
 
-    }
+  @include media-mobile {
+    width: 8px;
+    height: 8px;
+  }
 }

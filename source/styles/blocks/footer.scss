@@ -23,6 +23,12 @@
   @include media-desktop {
     padding-bottom: 49px;
   }
+
+      .logo {
+    @include media-mobile {
+      gap: 20px;
+    }
+}
 }
 
 .footer__nav {

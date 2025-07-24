@@ -22,8 +22,8 @@
   }
 
   @include media-tablet {
-        margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
+  }
 }
 
 .explore__container {
@@ -72,12 +72,15 @@
     margin: 62px auto 0;
   }
 
-    @include media-tablet {
-     width: 728px;
-  height: 705px;
-      margin: 0;
+  @include media-tablet {
+    width: 728px;
+    height: 705px;
+    margin: 0;
+  }
 
-
+    @include media-mobile {
+      width: 380px;
+    height: 368px;
     }
 }
 

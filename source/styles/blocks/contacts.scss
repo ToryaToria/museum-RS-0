@@ -11,6 +11,10 @@
     padding-top: 40px;
     padding-bottom: 67px;
   }
+
+      @include media-mobile {
+          padding-bottom: 40px;
+      }
 }
 
 .contacts__title {
@@ -20,9 +24,9 @@
     margin-bottom: 59px;
   }
 
-   @include media-tablet {
-        margin-bottom: 40px;
-    }
+  @include media-tablet {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__wrapper {
@@ -30,9 +34,9 @@
   gap: 25px;
   justify-content: space-between;
 
-     @include media-tablet {
-      flex-direction: column;
-     }
+  @include media-tablet {
+    flex-direction: column;
+  }
 }
 
 .contacts__img {
@@ -48,11 +52,17 @@
     height: 454px;
   }
 
-         @include media-tablet {
-          width: 728px;
+  @include media-tablet {
+    width: 728px;
     height: 476px;
     margin-top: 7px;
-        }
+  }
+
+    @include media-mobile {
+      width: 380px;
+    height: 248px;
+    margin-top: 5px;
+    }
 }
 
 .contacts__address {
@@ -62,14 +72,17 @@
     margin-bottom: 30px;
   }
 
-       @include media-tablet {
-           margin-bottom: 35px;
+  @include media-tablet {
+    margin-bottom: 35px;
+  }
 
-      }
+  // @include media-mobile {
+  //   margin-bottom: 32px;
+  // }
 }
 
 .contacts__text {
-   @include font($size: 22px, $line-height: 38.5px, $spacing: 1.1px);
+  @include font($size: 22px, $line-height: 38.5px, $spacing: 1.1px);
 
   text-decoration: none;
   &--bg-dark {
@@ -84,12 +97,13 @@
 
   @include media-tablet {
     font-size: 18px;
-        line-height: 34.5px;
-
+    line-height: 34.5px;
   }
 
   @include media-mobile {
     font-size: 16px;
+        line-height: 28.5px;
+          letter-spacing: 0.8px;
   }
 }
 

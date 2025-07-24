@@ -19,6 +19,10 @@
     padding-top: 35px;
     padding-bottom: 25px;
   }
+
+    @include media-mobile {
+        padding-bottom: 36px;
+    }
 }
 
 .header__nav {
