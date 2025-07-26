@@ -1,21 +1,18 @@
 .nav__list {
-@include list-reset;
+  @include list-reset;
 
-display: flex;
-// max-width: 720px;
-flex-wrap: wrap;
-gap: 55px;
-justify-content: flex-end;
-cursor: pointer;
+  display: flex;
+  // max-width: 720px;
+  flex-wrap: wrap;
+  gap: 55px;
+  justify-content: flex-end;
+  cursor: pointer;
 }
 
+.nav__link:hover {
+  color: $color-accent;
+}
 
-.nav__link {
-  &:hover {
-    color: $color-accent;
-  }
-
-    &:active {
-      color: $color-active;
-    }
+.nav__link:active {
+  color: $color-active;
 }

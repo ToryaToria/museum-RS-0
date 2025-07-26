@@ -1,0 +1,138 @@
+    <section class="video" id="video">
+      <div class="container">
+        <div class="video__title-wrapper">
+          <h2 class="title title--section">Video journey</h2>
+          <p class="video__text text-light">
+            Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or
+            Hammurabi's Code
+          </p>
+        </div>
+
+        <div>
+
+          <div class="video__wrapper">
+            <iframe class="video__iframe" width="1440" height="650" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video__control-panel">
+            <button class="video__play" type="button">
+              <span class="visually-hidden">play</span>
+            </button>
+
+            <input class="video__progress video__range" type="range" value="40" min="0" max="100" step="1">
+
+            <button class="video__volume" type="button">
+              <span class="visually-hidden">volume</span>
+            </button>
+
+            <input class="video__progress-volume video__range" type="range" value="40" min="0" max="100" step="1">
+
+            <button class="video__fullscreen" type="button">
+              <span class="visually-hidden">fullscreen</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="video__slider">
+          <ul class="video__list">
+            <li class="video__item">
+              <!-- <div class="video__information">
+                <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
+                  height="40">
+                <p class="video__information-text text-base">Exposition - Le Corps et l’Ame. De Dona...</p>
+                <button class="video__information-btn">
+                  <span class="visually-hidden">still</span>
+                </button>
+              </div> -->
+              <!-- src="./video/video1.mp4" -->
+
+              <div class="video__slider-video video__slider-video--slide1">
+                <iframe class="video__iframe" width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </li>
+
+            <li class="video__item">
+              <!-- <div class="video__information">
+                <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
+                  height="40">
+                <p class="video__information-text text-base">Au Louvre ! La Venus de Milo</p>
+                <button class="video__information-btn">
+                  <span class="visually-hidden">still</span>
+                </button>
+              </div> -->
+
+              <div class="video__slider-video video__slider-video--slide2">
+                <iframe class="video__iframe" width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </li>
+
+            <li class="video__item">
+              <!-- <div class="video__information">
+                <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
+                  height="40">
+                <p class="video__information-text text-base">Promenade dans les collections mesop...</p>
+                <button class="video__information-btn">
+                  <span class="visually-hidden">still</span>
+                </button>
+              </div> -->
+
+              <div class="video__slider-video video__slider-video--slide3">
+                <iframe class="video__iframe" width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </li>
+
+            <li class="video__item">
+              <!-- <div class="video__information">
+                <img class="video__information-img" src="./images/video-ava/ava-mini-1x.jpg" alt="" width="40"
+                  height="40">
+                <p class="video__information-tex text-base">Promenade dans les collections mesop...</p>
+                <button class="video__information-btn">
+                  <span class="visually-hidden">still</span>
+                </button>
+              </div> -->
+
+              <div class="video__slider-video video__slider-video--slide4">
+                <iframe class="video__iframe" width="452" height="254" src="https://www.youtube.com/embed/2OR0OCr6uRE"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </li>
+          </ul>
+
+          <div class="video__controller">
+            <button class="video__arr  video__arr--left" type="button">
+              <span class="visually-hidden">назад</span>
+            </button>
+
+            <div class="video__pagination">
+              <span class="visually-hidden">пагинация</span>
+              <button class="video__bullit video__bullit--current" type="button"></button>
+              <button class="video__bullit" type="button"></button>
+              <button class="video__bullit" type="button"></button>
+              <button class="video__bullit" type="button"></button>
+              <button class="video__bullit" type="button"></button>
+            </div>
+
+            <button class="video__arr" type="button"> <span class="visually-hidden">вперед</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
