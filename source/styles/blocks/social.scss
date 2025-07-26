@@ -1,0 +1,82 @@
+.social {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.social-item {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border-color: $color-text-accent;
+
+    .social-link {
+      background-color: $color-text-accent;
+    }
+  }
+
+  &:focus {
+    border-color: $color-point;
+    .social-link {
+      background-color: $color-point;
+    }
+  }
+
+  &:active {
+    border-color: $color-accent;
+    .social-link {
+      background-color: $color-accent;
+    }
+  }
+}
+
+.social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  background-color: $color-white;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  &:focus {
+    background-color: $color-point;
+    outline: auto;
+  }
+
+  &--youtube {
+    mask-size: 23px 16px;
+    mask-image: url("../../icons/youtube.svg");
+  }
+
+  &--inst {
+    mask-size: 20px 20px;
+    mask-image: url("../../icons/inst.svg");
+  }
+
+  &--face {
+    mask-size: 13px 20px;
+    mask-image: url("../../icons/face.svg");
+  }
+
+  &--twitt {
+    mask-size: 20px 16px;
+    mask-image: url("../../icons/twitter.svg");
+  }
+
+  &--pint {
+    mask-size: 20px 20px;
+    mask-image: url("../../icons/pint.svg");
+  }
+}

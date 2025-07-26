@@ -16,3 +16,65 @@
 .nav__link:active {
   color: $color-active;
 }
+
+.nav__list-img {
+  display: none;
+
+  @include media-tablet {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 55px;
+    margin-bottom: 35px;
+  }
+
+  @include media-mobile {
+      margin-left: 20px;
+      gap: 12px;
+          margin-bottom: 20px;
+
+  }
+}
+
+.nav__link-img {
+  display: none;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--1 {
+    background-image: url("../../images/menu/menu_1-1x.jpg");
+  }
+
+  &--2 {
+    background-image: url("../../images/menu/menu_2-1x.jpg");
+  }
+  &--3 {
+    background-image: url("../../images/menu/menu_3-1x.jpg");
+  }
+  @include media-tablet {
+    display: block;
+    width: 319px;
+    height: 161px;
+
+    &--1 {
+      width: 658px;
+      height: 194px;
+    }
+  }
+
+  @include media-mobile {
+    width: 95px;
+    height: 95px;
+
+    &--1 {
+    background-image: url("../../images/menu/menu_2-1x.jpg");
+  }
+
+  &--2 {
+    background-image: url("../../images/menu/menu_1-1x.jpg");
+  }
+  }
+}
