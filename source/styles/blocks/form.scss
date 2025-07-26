@@ -51,9 +51,9 @@
     width: 175px;
   }
 
-    @include media-mobile {
+  @include media-mobile {
     margin: 0 auto;
-    }
+  }
 }
 
 .form__wrapper-type {
@@ -83,10 +83,10 @@
     margin-bottom: 36px;
   }
 
-    @include media-mobile {
+  @include media-mobile {
     text-align: center;
     margin-bottom: 12px;
-    }
+  }
 }
 
 .form__label {
@@ -131,15 +131,16 @@
 
   @include media-desktop {
     margin-bottom: 24px;
+    gap: 41px;
   }
 
   @include media-tablet {
     margin-bottom: 22px;
   }
 
-    @include media-mobile {
+  @include media-mobile {
     margin-bottom: 11px;
-    }
+  }
 }
 
 .form_count-btn {
@@ -168,6 +169,8 @@ input[type="number"] {
 }
 
 .form__number {
+  @include font($size: 22px);
+
   width: 20px;
   flex-grow: 0;
   border: none;
@@ -189,16 +192,15 @@ input[type="number"] {
     margin-top: 40px;
   }
 
-      @include media-mobile {
-          margin-top: 42px;
+  @include media-mobile {
+    margin-top: 42px;
     text-align: center;
     letter-spacing: 1px;
-
-      }
+  }
 }
 
 .form__btn {
-    @include font($size: 22px, $line-height: 38.5px, $spacing: 1.1px);
+  @include font($size: 22px, $line-height: 38.5px, $spacing: 1.1px);
 
   @include btn-reset;
   display: block;
@@ -219,15 +221,14 @@ input[type="number"] {
 
   @include media-desktop {
     margin-top: 72px;
-    letter-spacing: 4.37px;
+    letter-spacing: 3.3px;
   }
 
   @include media-tablet {
     margin-top: 40px;
-        letter-spacing: 3.3px;
   }
-        @include media-mobile {
-        margin-right: auto;
-        font-size: 16px;
-        }
+  @include media-mobile {
+    margin-right: auto;
+    font-size: 16px;
+  }
 }
