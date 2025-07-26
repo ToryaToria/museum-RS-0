@@ -63,7 +63,10 @@
   text-decoration: none;
   color: $color-black;
 
-  // background-color: blue;
+  &:hover .title-card--underline:after {
+  width: 100%;
+}
+
 }
 
 .visiting__img {
