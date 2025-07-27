@@ -140,13 +140,18 @@
   }
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
+    border-color: $color-point;
+    &::after {
+      background-color: $color-point;
+    }
+  }
+
+   &:active {
     border-color: $color-accent;
     &::after {
       background-color: $color-accent;
     }
-  }
 }
 
 .video__iframe {
