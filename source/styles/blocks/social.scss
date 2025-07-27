@@ -2,7 +2,6 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .social-item {
@@ -50,11 +49,6 @@
   mask-repeat: no-repeat;
   mask-position: center;
 
-  &:focus {
-    background-color: $color-point;
-    outline: auto;
-  }
-
   &--youtube {
     mask-size: 23px 16px;
     mask-image: url("../../icons/youtube.svg");
@@ -78,5 +72,10 @@
   &--pint {
     mask-size: 20px 20px;
     mask-image: url("../../icons/pint.svg");
+  }
+
+  &:focus {
+    background-color: $color-point;
+    outline: auto;
   }
 }

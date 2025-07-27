@@ -79,6 +79,7 @@
 .header__nav--open {
   @include media-desktop {
     display: block;
+    background-color: aqua;
   }
 }
 
@@ -101,7 +102,8 @@
   }
 
   @include media-mobile {
-    padding-bottom: 36px;
+        padding-top: 32px;
+    padding-bottom: 33px;
   }
 }
 
@@ -109,7 +111,7 @@
   @include btn-reset;
   display: none;
   width: 32px;
-  height: 18px;
+  height: 25px;
 
   cursor: pointer;
   background-color: $color-white;
