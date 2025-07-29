@@ -2,7 +2,7 @@
   padding-top: 84px;
   padding-bottom: 50px;
   background-color: $color-bg-dark;
-  padding-bottom: 500px;
+  padding-bottom: 50px;
 
   @include media-desktop {
     padding-top: 60px;
@@ -10,7 +10,7 @@
 
   @include media-tablet {
     padding-top: 40px;
-    // padding-bottom: 67px;
+    padding-bottom: 67px;
   }
 }
 
