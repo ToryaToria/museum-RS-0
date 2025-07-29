@@ -10,7 +10,7 @@
 
   @include media-tablet {
     padding-top: 40px;
-    padding-bottom: 67px;
+    padding-bottom: 40px;
   }
 }
 
@@ -130,10 +130,10 @@
   margin-right: 19px;
 }
 
-.footer__social {
+.footer .footer__social {
   margin-top: auto;
   margin-left: auto;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   gap: 25px;
 
   @include media-desktop {

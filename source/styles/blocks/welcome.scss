@@ -10,10 +10,9 @@
     padding-bottom: 100px;
   }
 
-    @include media-mobile {
-        padding-bottom: 80px;
-
-    }
+  @include media-mobile {
+    padding-bottom: 80px;
+  }
 }
 
 .welcome__list {
@@ -87,15 +86,14 @@
       url("../../images/welcome-slider/welcome_5-1x.jpg");
   }
 
+  @media (max-width: 1300px) {
+    min-height: 600px;
+  }
+
   @include media-desktop {
     padding: 50px 539px 0 0;
     min-height: 525px;
   }
-
-   @media (max-width: 1300px) {
-        min-height: 600px;
-  }
-
 
   @include media-tablet {
     padding: 0;
@@ -139,18 +137,16 @@
 
 .welcome__slider-title {
   margin-bottom: 27px;
-
-       @media (max-width: 1300px) {
-font-size: 65px;
-  }
+  // @media (max-width: 1300px) {
+  //   font-size: 65px;
+  // }
 
   @include media-desktop {
-    font-size: 50px;
+    // font-size: 50px;
 
     line-height: 90px;
     margin-bottom: 28px;
   }
-
 
   @include media-tablet {
     line-height: 60px;
@@ -233,8 +229,8 @@ font-size: 65px;
   @include media-mobile {
     font-size: 16px;
     gap: 5px;
-      width: 40px;
-       letter-spacing: 0,
+    width: 40px;
+    letter-spacing: 0;
   }
 }
 
