@@ -52,7 +52,7 @@
   width: 1440px;
   height: 650px;
 
-  background-image: url("../../images/video_posters/poster0-1x.jpg");
+  background-image: url("../../images/video_posters/poster0-1x.webp");
 
   background-position: center;
   background-size: cover;
@@ -470,17 +470,17 @@
   background-repeat: no-repeat;
 
   &--slide1 {
-    background-image: url("../../images/video_posters/poster3-1x.jpg");
+    background-image: url("../../images/video_posters/poster3-1x.webp");
   }
 
   &--slide2 {
-    background-image: url("../../images/video_posters/poster1-1x.jpg");
+    background-image: url("../../images/video_posters/poster1-1x.webp");
   }
   &--slide3 {
-    background-image: url("../../images/video_posters/poster2-1x.jpg");
+    background-image: url("../../images/video_posters/poster2-1x.webp");
   }
   &--slide4 {
-    background-image: url("../../images/video_posters/poster4-1x.jpg");
+    background-image: url("../../images/video_posters/poster4-1x.webp");
   }
 
   @include media-desktop {

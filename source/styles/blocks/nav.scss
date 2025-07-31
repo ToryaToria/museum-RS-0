@@ -45,14 +45,14 @@
   background-size: cover;
 
   &--1 {
-    background-image: url("../../images/menu/menu_1-1x.jpg");
+    background-image: url("../../images/menu/menu_1-1x.webp");
   }
 
   &--2 {
-    background-image: url("../../images/menu/menu_2-1x.jpg");
+    background-image: url("../../images/menu/menu_2-1x.webp");
   }
   &--3 {
-    background-image: url("../../images/menu/menu_3-1x.jpg");
+    background-image: url("../../images/menu/menu_3-1x.webp");
   }
   @include media-tablet {
     display: block;
@@ -70,11 +70,11 @@
     height: 95px;
 
     &--1 {
-    background-image: url("../../images/menu/menu_2-1x.jpg");
+    background-image: url("../../images/menu/menu_2-1x.webp");
   }
 
   &--2 {
-    background-image: url("../../images/menu/menu_1-1x.jpg");
+    background-image: url("../../images/menu/menu_1-1x.webp");
   }
   }
 }

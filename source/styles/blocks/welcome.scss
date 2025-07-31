@@ -36,7 +36,7 @@
       45%,
       transparent
     ),
-    url("../../images/welcome-slider/welcome_1-1x.jpg");
+    url("../../images/welcome-slider/welcome_1-1x.webp");
 
   &--2 {
     background-image: linear-gradient(
@@ -47,7 +47,7 @@
         45%,
         transparent
       ),
-      url("../../images/welcome-slider/welcome_2-1x.jpg");
+      url("../../images/welcome-slider/welcome_2-1x.webp");
   }
 
   &--3 {
@@ -59,7 +59,7 @@
         45%,
         transparent
       ),
-      url("../../images/welcome-slider/welcome_3-1x.jpg");
+      url("../../images/welcome-slider/welcome_3-1x.webp");
   }
 
   &--4 {
@@ -71,7 +71,7 @@
         45%,
         transparent
       ),
-      url("../../images/welcome-slider/welcome_4-1x.jpg");
+      url("../../images/welcome-slider/welcome_4-1x.webp");
   }
 
   &--5 {
@@ -83,7 +83,7 @@
         45%,
         transparent
       ),
-      url("../../images/welcome-slider/welcome_5-1x.jpg");
+      url("../../images/welcome-slider/welcome_5-1x.webp");
   }
 
   @media (max-width: 1300px) {
@@ -102,22 +102,22 @@
     // background-color: aquamarine;
     background-position: bottom center;
 
-    background-image: url("../../images/welcome-slider/welcome_1-1x.jpg");
+    background-image: url("../../images/welcome-slider/welcome_1-1x.webp");
 
     &--2 {
-      background-image: url("../../images/welcome-slider/welcome_2-1x.jpg");
+      background-image: url("../../images/welcome-slider/welcome_2-1x.webp");
     }
 
     &--3 {
-      background-image: url("../../images/welcome-slider/welcome_3-1x.jpg");
+      background-image: url("../../images/welcome-slider/welcome_3-1x.webp");
     }
 
     &--4 {
-      background-image: url("../../images/welcome-slider/welcome_4-1x.jpg");
+      background-image: url("../../images/welcome-slider/welcome_4-1x.webp");
     }
 
     &--5 {
-      background-image: url("../../images/welcome-slider/welcome_5-1x.jpg");
+      background-image: url("../../images/welcome-slider/welcome_5-1x.webp");
     }
   }
 
