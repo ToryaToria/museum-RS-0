@@ -1,5 +1,8 @@
 /* в этот файл добавляет скрипты*/
 
-console.log('ky')
+console.log('ky');
 
-import './menu'
+import './menu';
+import {initSwiperWelcome} from './welcome';
+
+initSwiperWelcome();

@@ -77,5 +77,8 @@
   },
   "overrides": {
     "es5-ext": "0.10.53"
+  },
+  "dependencies": {
+    "swiper": "^11.2.10"
   }
 }
