@@ -11,7 +11,7 @@ const welcomeItems = document.querySelectorAll('.welcome__item');
 
 
 strCount.textContent = '0' + String(welcomeItems.length);
-console.log('welcome');
+// console.log('welcome');
 
 
 const initSwiperWelcome = () => {
@@ -54,10 +54,10 @@ const initSwiperWelcome = () => {
     );
 
   swiperWelcome.on('slideChange', () => {
-    console.log('slider change');
-    console.log(swiperWelcome.activeIndex);
+    // console.log('slider change');
+    // console.log(swiperWelcome.activeIndex);
 
-    console.log(welcomeItems[swiperWelcome.activeIndex].dataset.swiperSlideIndex);
+    // console.log(welcomeItems[swiperWelcome.activeIndex].dataset.swiperSlideIndex);
 
     strNumber.textContent = '0' + String(swiperWelcome.activeIndex + 1);
   });

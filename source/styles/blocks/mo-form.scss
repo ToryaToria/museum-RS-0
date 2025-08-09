@@ -1,0 +1,330 @@
+.mo-form {
+  position: absolute;
+  box-sizing: border-box;
+  width: 1440px;
+  padding: 91px 235px;
+  position: absolute;
+  left: -1700px;
+  top: 0;
+  background-color: $color-white;
+  outline: auto;
+
+  transition: 0.5s;
+
+  display: flex;
+  gap: 40px;
+}
+
+.mo-form--open {
+  left: 0;
+  z-index: 10;
+}
+
+.mo-form__btn-open {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+
+  @include btn-reset;
+  width: 32px;
+  height: 25px;
+
+  cursor: pointer;
+  background-color: $color-bg-dark;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: auto;
+  mask-image: url("../../icons/burg_open.svg");
+
+  &:focus,
+  &:hover {
+    background-color: $color-point;
+    outline: auto;
+  }
+
+  @include media-desktop {
+    display: block;
+  }
+}
+
+.mo-form__form-wrapper {
+  width: 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.mo-form__title {
+  @include font-title(
+    $size: 50px,
+    $line-height: 100%,
+    $color: $color-accent,
+    $spacing: 0
+  );
+
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.mo-form__subtitte {
+  @include font($size: 18px, $color: $color-btn, $weight: 400, $spacing: 0);
+
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 60px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    // right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: $color-line;
+  }
+}
+
+.mo-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mo-form__wrap-flex {
+  display: flex;
+  gap: 20px;
+}
+
+.mo-form__field {
+  box-sizing: border-box;
+  padding: 13px 15px 12px 45px;
+  min-height: 45px;
+  border: 1px solid $color-bg-dark;
+  width: 100%;
+}
+
+.mo-form__field--date,
+.mo-form__ticket-text--data {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 15px 15px;
+  background-image: url("../../icons/date.svg");
+}
+
+.mo-form__field--time,
+.mo-form__ticket-text--time {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 15px 15px;
+  background-image: url("../../icons/time.svg");
+}
+
+.mo-form__field--name {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 13px 15px;
+  background-image: url("../../icons/name.svg");
+}
+
+.mo-form__field--email {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 15px 11px;
+  background-image: url("../../icons/email.svg");
+}
+
+.mo-form__field--phone {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 14px 23px;
+  background-image: url("../../icons/tel.svg");
+}
+
+.mo-form__field--type {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 15px 15px;
+  background-image: url("../../icons/ballot.svg");
+}
+
+.mo-form__ticket-text--exh {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 15px 15px;
+  background-image: url("../../icons/check_circle_outline.svg");
+}
+
+.mo-form__form-title {
+  @include font-title(
+    $size: 18px,
+    $line-height: 100%,
+    $color: $color-accent,
+    $spacing: 0
+  );
+  position: relative;
+
+  padding-bottom: 5px;
+  font-weight: 400;
+  margin-bottom: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    // right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: $color-line;
+  }
+}
+
+.mo-form__counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mo-form__ticket-wrapper {
+  box-sizing: border-box;
+  border: 1px solid $color-bg-dark;
+  padding: 25px 30px 26px 30px;
+  background-image: url("../../images/tickets/ticket-img-1x.webp");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top right;
+  width: 530px;
+}
+
+.mo-form__wrapper-ticket {
+  box-sizing: border-box;
+  // padding: 10px 15px 15px 15px;
+  // min-height: 45px;
+  // border: 1px solid $color-bg-dark;
+  margin-bottom: 22px;
+  width: 300px;
+}
+
+.mo-form__ticket {
+  width: 300px;
+}
+
+.mo-form__ticket-title {
+  @include font($size: 32px, $weight: 500);
+  margin-bottom: 2px;
+}
+
+.mo-form__ticket-subtitle {
+  @include font($size: 22px, $weight: 500, $color: $color-btn);
+  margin-bottom: 10px;
+}
+
+.mo-form__ticket-text {
+  @include font($size: 18px, $weight: 300, $spacing: 0);
+  padding-left: 45px;
+  margin-left: -15px;
+}
+
+.mo-form__ticket-text:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.mo-form__wrapper-prise {
+  display: flex;
+  // justify-content: space-between;
+  width: 100%;
+
+  &--basic {
+    margin-bottom: 5px;
+  }
+
+  &--senior {
+    margin-bottom: 9px;
+  }
+}
+
+p.mo-form__wrapper-prise {
+  border-top: 3px solid $color-btn;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.mo-form__count {
+  box-sizing: border-box;
+  background-color: $color-bg-dark;
+  color: #a4a4a3;
+  width: 32px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 2px 11px;
+  text-align: center;
+}
+
+.mo-form__price {
+  @include font($size: 32px, $weight: 400);
+}
+
+.mo-form__prise-text {
+  @include font($size: 22px, $weight: 400, $spacing: 0);
+}
+
+.mo-form__prise-type {
+  margin-left: 10px;
+}
+.mo-form__cost {
+  margin-left: auto;
+}
+
+.mo-form__side1 {
+  box-sizing: border-box;
+  width: 360px;
+  height: 211px;
+  padding: 15px 20px;
+  background-color: #bcbcbc;
+
+  background-image: url("../../icons/visa.svg");
+  background-repeat: no-repeat;
+  background-size: 55px 63px;
+  background-position: top right;
+}
+
+.mo-form__side2 {
+  box-sizing: border-box;
+  width: 360px;
+  height: 211px;
+  padding: 15px 0;
+  background-color: #a4a4a3;
+}
+
+.mo-form__side2-bg {
+  width: 360px;
+  height: 45px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: #161615;
+  // margin-left: -20px;
+  // margin-right: -40px;
+}
+
+.mo-form__btn-submit {
+  box-sizing: border-box;
+  display: block;
+  @include btn-reset;
+  @include font($size: 22px, $weight: 500, $color: $color-white);
+  cursor: pointer;
+
+  background-color: $color-btn;
+  padding: 11px 45px 10px;
+  min-width: 220px;
+  min-height: 45px;
+
+  margin-top: 26px;
+  margin-left: auto;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-accent;
+  }
+}

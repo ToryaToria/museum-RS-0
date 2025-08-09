@@ -4,7 +4,17 @@ console.log('ky');
 
 import './menu';
 import './slider-explore';
+import './form-count-section';
+import './form-mo';
 
 import {initSwiperWelcome} from './welcome';
+// import {  loadMap,
+// renderSimilarMarkers
+// } from './map';
+
+import './map';
+
+// loadMap();
+// renderSimilarMarkers();
 
 initSwiperWelcome();
