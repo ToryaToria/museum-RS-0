@@ -1,1 +1,1 @@
-var t=document.querySelector(".slider");document.querySelector(".slider__range").addEventListener("input",e=>{t.style.setProperty("--position",`${e.target.value}%`)});console.log("\u041F\u0440\u0438\u0432\u0435\u0442!");
+var t=document.querySelector(".slider");document.querySelector(".slider__range").addEventListener("input",e=>{t.style.setProperty("--position",`${e.target.value}%`)});
