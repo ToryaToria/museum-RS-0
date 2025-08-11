@@ -13,6 +13,8 @@ import {initSwiperWelcome} from './welcome';
 // } from './map';
 
 import './map';
+import './gallery';
+
 
 // loadMap();
 // renderSimilarMarkers();
