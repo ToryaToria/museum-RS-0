@@ -5,7 +5,8 @@
 <a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="RS School" src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg"></a>
 
 [Проект выполнен на курсе «JS/Frontend-разработка. Подготовительный этап»](https://github.com/rolling-scopes-school/tasks/tree/master/stage0) от [RS School](https://rs.school/courses/javascript).
-
+<br>
+<br>
 - Студент: [Виктория Калугина](https://github.com/ToryaToria).
 - Проект: [Museum](https://github.com/ToryaToria/museum-RS-0) 2025 г.
 
@@ -15,7 +16,10 @@
 
 - [Техническое задание](./readme/Readme_tz.md)
 
-### Ключевые навыки:
+<details>
+<summary>
+<h4> Ключевые навыки:</h4>
+</summary>
 
 - валидная семантическая адаптивная вёрстка
 - легкоподдерживаемый читаемый код
@@ -35,6 +39,7 @@
 - добавление на сайт калькулятора продажи товаров (калькулятор продажи билетов в секции Tickets и в форме продажи билетов)
 - валидация форм
 - добавление на сайт интерактивной карты, подключаемой при помощи js-библиотеки mapbox (или ее аналогов), её кастомизация: добавление маркеров, изменение стиля
+</details>
 
 ## Описание
 [Описание проекта](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/museum/museum.md)
