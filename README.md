@@ -2,7 +2,7 @@
 
 ## проект курса RS-0
 
-<a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png"></a>
+<a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="RS School" src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg"></a>
 
 Проект выполнен на курсе «JS/Frontend-разработка. Подготовительный этап»
 (https://github.com/rolling-scopes-school/tasks/tree/master/stage0) от [RS School](https://rs.school/courses/javascript).
