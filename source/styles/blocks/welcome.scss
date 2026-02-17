@@ -1,18 +1,75 @@
 .welcome {
   background-color: $color-bg-dark;
+  // background-color: blue;
+}
+
+.welcome__container {
+  position: relative;
+}
+
+.welcome__wrapper-content {
+  position: relative;
+  width: fit-content;
+  padding: 150px 55px 272px 0;
+  z-index: 5;
+
+  background-image: linear-gradient(
+    to right,
+    black,
+    40%,
+    black,
+    85%,
+    transparent
+  );
+
+  @include media-desktop {
+    padding: 50px 20px 192px 0;
+
+    background-image: linear-gradient(
+      to right,
+      black,
+      40%,
+      black,
+      85%,
+      transparent
+    );
+  }
+
+  @include media-tablet {
+    position: static;
+    width: 100%;
+    padding: 0 0 50px 0;
+    background-color: black;
+    text-align: center;
+  }
 }
 
 .welcome__slider {
-  position: relative;
-  padding-bottom: 60px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 240px;
+
+  width: 1000px;
+
   overflow: hidden;
+  padding-bottom: 60px;
+
+  @include media-desktop {
+    right: 20px;
+    width: 700px;
+  }
 
   @include media-tablet {
+    position: static;
     padding-bottom: 100px;
+    width: 728px;
   }
 
   @include media-mobile {
     padding-bottom: 80px;
+    width: 380px;
   }
 }
 
@@ -23,137 +80,36 @@
 
 .welcome__item {
   width: 100%;
-flex-shrink: 0;
-flex-grow: 1;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
 
-.welcome__item-wrapper {
-  width: 100%;
-  // flex-grow: 1;
-  box-sizing: border-box;
-  min-height: 750px;
-  padding: 150px 842px 0 0;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-
-  background-image: linear-gradient(
-      to right,
-      black,
-      15%,
-      black,
-      45%,
-      transparent
-    ),
-    url("../../images/welcome-slider/welcome_1-1x.webp");
-
-  &--2 {
-    background-image: linear-gradient(
-        to right,
-        black,
-        15%,
-        black,
-        45%,
-        transparent
-      ),
-      url("../../images/welcome-slider/welcome_2-1x.webp");
-  }
-
-  &--3 {
-    background-image: linear-gradient(
-        to right,
-        black,
-        15%,
-        black,
-        45%,
-        transparent
-      ),
-      url("../../images/welcome-slider/welcome_3-1x.webp");
-  }
-
-  &--4 {
-    background-image: linear-gradient(
-        to right,
-        black,
-        15%,
-        black,
-        45%,
-        transparent
-      ),
-      url("../../images/welcome-slider/welcome_4-1x.webp");
-  }
-
-  &--5 {
-    background-image: linear-gradient(
-        to right,
-        black,
-        15%,
-        black,
-        45%,
-        transparent
-      ),
-      url("../../images/welcome-slider/welcome_5-1x.webp");
-  }
-
-  @media (max-width: 1300px) {
-    min-height: 600px;
-  }
+.welcome__img {
+  display: block;
+  object-fit: contain;
+  width: 1000px;
+  height: 750px;
 
   @include media-desktop {
-    padding: 50px 539px 0 0;
-    min-height: 525px;
+    width: 700px;
+    height: 525px;
   }
 
   @include media-tablet {
-    padding: 0;
-    min-height: 761px;
-
-    // background-color: aquamarine;
-    background-position: bottom center;
-
-    background-image: url("../../images/welcome-slider/welcome_1-1x.webp");
-
-    &--2 {
-      background-image: url("../../images/welcome-slider/welcome_2-1x.webp");
-    }
-
-    &--3 {
-      background-image: url("../../images/welcome-slider/welcome_3-1x.webp");
-    }
-
-    &--4 {
-      background-image: url("../../images/welcome-slider/welcome_4-1x.webp");
-    }
-
-    &--5 {
-      background-image: url("../../images/welcome-slider/welcome_5-1x.webp");
-    }
+    width: 728px;
+    height: 546px;
   }
 
   @include media-mobile {
-    min-height: 464px;
-  }
-}
-
-.welcome__item-inner {
-  min-width: 601px;
-
-  @include media-tablet {
-    min-width: 100%;
-    text-align: center;
+    width: 380px;
+    height: 285px;
   }
 }
 
 .welcome__slider-title {
   margin-bottom: 27px;
-  // @media (max-width: 1300px) {
-  //   font-size: 65px;
-  // }
 
   @include media-desktop {
-    // font-size: 50px;
-
     line-height: 90px;
     margin-bottom: 28px;
   }
@@ -174,6 +130,10 @@ flex-grow: 1;
 
   @include media-desktop {
     margin-bottom: 50px;
+  }
+
+  @include media-tablet {
+    margin-bottom: 0;
   }
 }
 
@@ -200,7 +160,6 @@ flex-grow: 1;
   background-color: $color-bg-dark;
 
   display: flex;
-  // gap: 55px;
   align-items: center;
 
   @include media-desktop {
@@ -220,12 +179,11 @@ flex-grow: 1;
   }
 }
 
-.welcome__slider-str {
+.welcome__slider-numbers {
   @include font(
     $size: 22px,
     $line-height: 40px,
     $weight: 400,
-    // $spacing: 2px,
     $color: $color-white
   );
 
@@ -261,16 +219,14 @@ flex-grow: 1;
 }
 
 .welcome__slider-bullit.swiper-pagination-bullet-active {
-    background-color: $color-point;
-  }
+  background-color: $color-point;
+}
 
 .welcome__slider-bullit {
   @include btn-reset;
   width: 16px;
   height: 16px;
   background-color: $color-white;
-
-
 
   &:hover,
   &:focus,

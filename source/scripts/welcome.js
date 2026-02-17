@@ -1,27 +1,21 @@
-// https://swiperjs.com/get-started#installation
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 // import 'swiper/css';
 import 'swiper/css/pagination';
+const paginationFractionEl = document.querySelector('.welcome__slider-numbers');
 
-const strCount = document.querySelector('.welcome__str-count');
-const strNumber = document.querySelector('.welcome__str-number');
-
-const welcomeItems = document.querySelectorAll('.welcome__item');
-
-
-strCount.textContent = '0' + String(welcomeItems.length);
-// console.log('welcome');
-
+//добавляю "0" перед числом до 10
+const addZero = (num) => {
+  return (num > 9) ? num : '0' + num;
+}
 
 const initSwiperWelcome = () => {
   const swiperWelcome = new Swiper
     ('.welcome__slider',
       {
         modules: [Navigation, Pagination],
-        loop: true, // зациклен
-        allowTouchMove: true, // свайп и мышка
-        // direction: 'horizontal', // по умолчанию
+        loop: true,
+        allowTouchMove: true,
         grabCursor: true,
 
         spaceBetween: 20,
@@ -32,10 +26,8 @@ const initSwiperWelcome = () => {
           el: '.welcome__slider-pagination',
           clickable: true,
           renderBullet: function (activeIndex, className) {
-            return `<button class="welcome__slider-bullit ${className}" data-index="${activeIndex}" type="button">
-                  <span class="visually-hidden">слайд ${activeIndex + 1}</span>
-                  </button>`;
-          }
+            return `<button class="welcome__slider-bullit ${className}" type="button"></button>`;
+          },
         },
 
         navigation: {
@@ -49,25 +41,26 @@ const initSwiperWelcome = () => {
             slidesPerView: 1,
 
           },
-        }
+        },
       }
     );
 
-  swiperWelcome.on('slideChange', () => {
-    // console.log('slider change');
-    // console.log(swiperWelcome.activeIndex);
 
-    // console.log(welcomeItems[swiperWelcome.activeIndex].dataset.swiperSlideIndex);
+  if (paginationFractionEl) {
+    paginationFractionEl.innerHTML = `
+      <span class="current">${addZero(1)}</span> / <span class="total">${addZero(swiperWelcome.slides.length)}</span>
+    `;
 
-    strNumber.textContent = '0' + String(swiperWelcome.activeIndex + 1);
-  });
+    swiperWelcome.on('slideChange', function () {
+      const fractionCurrent = paginationFractionEl.querySelector('.current');
+      const fractionTotal = paginationFractionEl.querySelector('.total');
+
+      if (fractionCurrent && fractionTotal) {
+        fractionCurrent.textContent = addZero(swiperWelcome.realIndex + 1);
+        fractionTotal.textContent = addZero(swiperWelcome.slides.length);
+      }
+    });
+  }
 };
 
-// welcomeItems.forEach(item => {
-//       console.log(item.dataset.swiperSlideIndex);
-
-// });
-
 export { initSwiperWelcome };
-
-
