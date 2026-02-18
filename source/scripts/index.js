@@ -6,7 +6,7 @@ import './menu';
 
 import {initSwiperWelcome} from './welcome';
 
-// import './slider-explore';
+import './slider-explore';
 // import './form-count-section';
 // import './form-mo';
 
