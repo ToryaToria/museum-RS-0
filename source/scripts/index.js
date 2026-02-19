@@ -7,6 +7,8 @@ import './menu';
 import {initSwiperWelcome} from './welcome';
 
 import './slider-explore';
+import './gallery';
+
 // import './form-count-section';
 // import './form-mo';
 
@@ -15,7 +17,6 @@ import './slider-explore';
 // } from './map';
 
 // import './map';
-// import './gallery';
 
 
 // loadMap();
