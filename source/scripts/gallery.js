@@ -25,13 +25,53 @@ if ("content" in document.createElement("template")) {
     img.src = `./images/galery/galery${imgs[i]}-1x.jpg`;
     img.srcset = `./images/galery/galery${imgs[i]}-2x.jpg 2x`;
 
-    if (i === 0) {
+    if (i === 0 || i === 10) {
       picture.style.marginTop = '50px';
     }
 
     slider.appendChild(clone);
 
-//показать изобр при прокрутке
+    //показать изобр при прокрутке
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const imgs = document.querySelectorAll('.gallery__img');
+      if (!imgs.length) return;
+
+
+      // imgs.forEach((img, i) => {
+      //   const delay = (i % 6) * 80;
+      //   img.style.setProperty('--d', `${delay}ms`);
+      // });
+
+
+      function resetInstant(el) {
+        el.style.transition = 'none';
+        el.classList.remove('gallery__img--visible');
+        el.offsetHeight;
+        el.style.transition = '';
+      }
+
+      const interObserver = new IntersectionObserver((entries) => {
+        console.log('111!');
+        entries.forEach((entry) => {
+          const el = entry.target;
+          if (entry.isIntersecting) {
+            el.classList.add('gallery__img--visible');
+          } else {
+            resetInstant(el);
+          }
+        });
+      },
+      // {
+      //   threshold: 0.15,
+      //   rootMargin: '0px'
+      // }
+    );
+
+      imgs.forEach(img => interObserver.observe(img));
+    });
+
+
 
 
 

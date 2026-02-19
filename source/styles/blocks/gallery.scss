@@ -24,9 +24,7 @@
 .gallery__slider {
   height: 1960px;
   position: relative;
-  // overflow-y: hidden;
-
-  background-color: antiquewhite;
+  overflow-y: hidden;
 
   &::after {
     content: "";
@@ -34,7 +32,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 1440px;
+    width: auto;
     height: 360px;
     background: linear-gradient(transparent, black);
   }
@@ -86,6 +84,15 @@
   height: auto;
   object-fit: contain;
 
+  opacity: 0;
+  transform: translateY(32px) scale(0.975);
+  transition:
+    transform 700ms ease-in-out,
+    opacity 700ms ease-out;
+  transition-delay: 0s;
+  will-change: transform, opacity;
+  transform-origin: 50% 100%;
+
   @include media-desktop {
     max-width: 304px;
   }
@@ -99,14 +106,7 @@
   }
 }
 
-.gallery__img--lazyload {
-  opacity: 0; /* Изначально делаем изображение невидимым */
-  transition: opacity 0.5s ease-in-out;
-  // max-width: 100%;
-  // height: auto;
-}
-
 .gallery__img--visible {
   opacity: 1;
+  transform: translateY(0) scale(1);
 }
-
